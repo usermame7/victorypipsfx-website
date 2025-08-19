@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import Testimonials from "@/components/Testimonials";
 import ChartBackground from "@/components/ChartBackground";
 
 export default function HomePage() {
@@ -42,6 +43,7 @@ export default function HomePage() {
       {/* Content */}
       <Header />
       <Hero />
+      <Testimonials />
     </div>
   );
 }

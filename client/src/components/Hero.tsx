@@ -17,7 +17,7 @@ export default function Hero() {
           {/* Logo */}
           <div className="mb-8">
             <img 
-              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQwIiBoZWlnaHQ9IjI0MCIgdmlld0JveD0iMCAwIDI0MCAyNDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxkZWZzPgo8cmFkaWFsR3JhZGllbnQgaWQ9ImJnR3JhZGllbnQiIGN4PSI1MCUiIGN5PSI1MCUiIHI9IjUwJSI+CjxzdG9wIG9mZnNldD0iMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiMwMEUwRDY7c3RvcC1vcGFjaXR5OjAuOCIgLz4KPHN0b3Agb2Zmc2V0PSI1MCUiIHN0eWxlPSJzdG9wLWNvbG9yOiMwMEI0RDg7c3RvcC1vcGFjaXR5OjAuNiIgLz4KPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdHlsZT0ic3RvcC1jb2xvcjojMDcxMDE4O3N0b3Atb3BhY2l0eToxIiAvPgo8L3JhZGlhbEdyYWRpZW50Pgo8bGluZWFyR3JhZGllbnQgaWQ9InRleHRHcmFkaWVudCIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CjxzdG9wIG9mZnNldD0iMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiNlOGVkZjI7c3RvcC1vcGFjaXR5OjEiIC8+CjxzdG9wIG9mZnNldD0iMTAwJSIgc3R5bGU9InN0b3AtY29sb3I6IzAwRTBENjtzdG9wLW9wYWNpdHk6MSIgLz4KPC9saW5lYXJHcmFkaWVudD4KPC9kZWZzPgo8cmVjdCB3aWR0aD0iMjQwIiBoZWlnaHQ9IjI0MCIgcng9IjI0IiBmaWxsPSJ1cmwoI2JnR3JhZGllbnQpIi8+Cjx0ZXh0IHg9IjEyMCIgeT0iMTMwIiBmb250LWZhbWlseT0iSW50ZXIsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iNzIiIGZvbnQtd2VpZ2h0PSI5MDAiIGZpbGw9InVybCgjdGV4dEdyYWRpZW50KSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+VjwvdGV4dD4KPHR0ZXh0IHg9IjEyMCIgeT0iMTgwIiBmb250LWZhbWlseT0iSW50ZXIsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTgiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiNjMmM5ZDMiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkZYIFBSRU1JVU08L3RleHQ+Cjwvc3ZnPgo="
+              src="@assets/logo_1755568189581.jpg"
               alt="VictoryPipsFX logo"
               className="w-48 h-48 md:w-64 md:h-64 mx-auto rounded-3xl shadow-2xl animate-float hover:scale-105 transition-transform duration-500 shadow-glow"
             />
@@ -25,7 +25,7 @@ export default function Hero() {
 
           {/* Title */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-black mb-4 text-gradient tracking-tight leading-tight">
-            Smart Chart Alerts
+            Get Powerful GOLD and Forex Signals Daily
           </h1>
 
           {/* Subtitle */}
@@ -62,21 +62,21 @@ export default function Hero() {
           {/* Stats */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto mb-16">
             <StatCounter 
-              target={2500}
+              target={25000}
               suffix="+"
               label="Active Members"
               delay={0.2}
             />
             <StatCounter 
-              target={95}
+              target={95.7}
               suffix="%"
               label="Accuracy Rate"
               delay={0.4}
             />
             <StatCounter 
-              target={24}
-              suffix="/7"
-              label="Daily Signals"
+              target={5}
+              suffix=""
+              label="Strong Daily Signals"
               delay={0.6}
             />
           </div>
@@ -85,19 +85,19 @@ export default function Hero() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {[
               {
-                icon: "🚀",
-                title: "Join Channel",
-                description: "Access our premium Telegram channel with live market analysis and trade alerts"
+                icon: "💎",
+                title: "Premium GOLD Signals",
+                description: "High-accuracy XAUUSD signals with precise entry and exit points for maximum profit"
               },
               {
-                icon: "📊",
-                title: "Read Analysis", 
-                description: "Daily market levels, key support/resistance zones, and trend analysis"
+                icon: "💰",
+                title: "Forex Mastery", 
+                description: "Major currency pairs analysis with clear risk management and profit targets"
               },
               {
-                icon: "⚡",
-                title: "Execute Trades",
-                description: "Follow our structured approach: Entry • Risk Management • Exit Strategy"
+                icon: "📈",
+                title: "Daily Market Analysis",
+                description: "3-5 strong daily signals with detailed charts, levels, and strategic insights"
               }
             ].map((card, index) => (
               <div 

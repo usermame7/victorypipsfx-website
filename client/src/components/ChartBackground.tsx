@@ -27,31 +27,48 @@ export default function ChartBackground() {
           <path d="M0 0 V900 M120 0 V900 M240 0 V900 M360 0 V900 M480 0 V900 M600 0 V900 M720 0 V900 M840 0 V900 M960 0 V900 M1080 0 V900 M1200 0 V900 M1320 0 V900 M1440 0 V900"/>
         </g>
         
-        {/* Animated Candlestick Bodies */}
+        {/* Animated Candlestick Bodies - More Green Candles for Bull Market */}
         <g stroke="none">
-          {/* Green candles */}
-          <rect x="40" y="620" width="16" height="120" fill="url(#gGreen)" opacity="0.9" rx="2">
-            <animate attributeName="height" values="120;140;120" dur="4s" repeatCount="indefinite"/>
+          {/* Green candles - Dominant bull trend */}
+          <rect x="40" y="600" width="16" height="140" fill="url(#gGreen)" opacity="0.95" rx="2">
+            <animate attributeName="height" values="140;160;140" dur="4s" repeatCount="indefinite"/>
           </rect>
-          <rect x="160" y="580" width="16" height="160" fill="url(#gGreen)" opacity="0.9" rx="2">
+          <rect x="120" y="580" width="16" height="160" fill="url(#gGreen)" opacity="0.9" rx="2">
             <animate attributeName="height" values="160;180;160" dur="5s" repeatCount="indefinite"/>
           </rect>
-          <rect x="280" y="640" width="16" height="100" fill="url(#gGreen)" opacity="0.9" rx="2"/>
-          <rect x="520" y="600" width="16" height="140" fill="url(#gGreen)" opacity="0.9" rx="2"/>
-          <rect x="760" y="560" width="16" height="180" fill="url(#gGreen)" opacity="0.9" rx="2"/>
-          <rect x="1000" y="620" width="16" height="120" fill="url(#gGreen)" opacity="0.9" rx="2"/>
-          <rect x="1240" y="600" width="16" height="140" fill="url(#gGreen)" opacity="0.9" rx="2"/>
-          
-          {/* Red candles */}
-          <rect x="80" y="680" width="16" height="80" fill="url(#gRed)" opacity="0.8" rx="2"/>
-          <rect x="200" y="660" width="16" height="100" fill="url(#gRed)" opacity="0.8" rx="2"/>
-          <rect x="320" y="700" width="16" height="60" fill="url(#gRed)" opacity="0.8" rx="2">
-            <animate attributeName="height" values="60;80;60" dur="3s" repeatCount="indefinite"/>
+          <rect x="200" y="620" width="16" height="120" fill="url(#gGreen)" opacity="0.95" rx="2"/>
+          <rect x="280" y="590" width="16" height="150" fill="url(#gGreen)" opacity="0.9" rx="2">
+            <animate attributeName="height" values="150;170;150" dur="6s" repeatCount="indefinite"/>
           </rect>
-          <rect x="440" y="680" width="16" height="80" fill="url(#gRed)" opacity="0.8" rx="2"/>
-          <rect x="680" y="640" width="16" height="120" fill="url(#gRed)" opacity="0.8" rx="2"/>
-          <rect x="920" y="700" width="16" height="60" fill="url(#gRed)" opacity="0.8" rx="2"/>
-          <rect x="1160" y="680" width="16" height="80" fill="url(#gRed)" opacity="0.8" rx="2"/>
+          <rect x="360" y="610" width="16" height="130" fill="url(#gGreen)" opacity="0.95" rx="2"/>
+          <rect x="440" y="570" width="16" height="170" fill="url(#gGreen)" opacity="0.9" rx="2"/>
+          <rect x="520" y="600" width="16" height="140" fill="url(#gGreen)" opacity="0.95" rx="2"/>
+          <rect x="600" y="580" width="16" height="160" fill="url(#gGreen)" opacity="0.9" rx="2">
+            <animate attributeName="height" values="160;180;160" dur="4.5s" repeatCount="indefinite"/>
+          </rect>
+          <rect x="680" y="610" width="16" height="130" fill="url(#gGreen)" opacity="0.95" rx="2"/>
+          <rect x="760" y="560" width="16" height="180" fill="url(#gGreen)" opacity="0.9" rx="2"/>
+          <rect x="840" y="590" width="16" height="150" fill="url(#gGreen)" opacity="0.95" rx="2"/>
+          <rect x="920" y="600" width="16" height="140" fill="url(#gGreen)" opacity="0.9" rx="2"/>
+          <rect x="1000" y="580" width="16" height="160" fill="url(#gGreen)" opacity="0.95" rx="2">
+            <animate attributeName="height" values="160;180;160" dur="5.5s" repeatCount="indefinite"/>
+          </rect>
+          <rect x="1080" y="610" width="16" height="130" fill="url(#gGreen)" opacity="0.9" rx="2"/>
+          <rect x="1160" y="590" width="16" height="150" fill="url(#gGreen)" opacity="0.95" rx="2"/>
+          <rect x="1240" y="600" width="16" height="140" fill="url(#gGreen)" opacity="0.9" rx="2"/>
+          <rect x="1320" y="580" width="16" height="160" fill="url(#gGreen)" opacity="0.95" rx="2"/>
+          
+          {/* Red candles - Fewer, smaller corrections */}
+          <rect x="80" y="700" width="16" height="60" fill="url(#gRed)" opacity="0.7" rx="2"/>
+          <rect x="240" y="720" width="16" height="40" fill="url(#gRed)" opacity="0.6" rx="2"/>
+          <rect x="400" y="710" width="16" height="50" fill="url(#gRed)" opacity="0.7" rx="2">
+            <animate attributeName="height" values="50;70;50" dur="3s" repeatCount="indefinite"/>
+          </rect>
+          <rect x="560" y="720" width="16" height="40" fill="url(#gRed)" opacity="0.6" rx="2"/>
+          <rect x="720" y="700" width="16" height="60" fill="url(#gRed)" opacity="0.7" rx="2"/>
+          <rect x="880" y="710" width="16" height="50" fill="url(#gRed)" opacity="0.6" rx="2"/>
+          <rect x="1040" y="720" width="16" height="40" fill="url(#gRed)" opacity="0.7" rx="2"/>
+          <rect x="1200" y="710" width="16" height="50" fill="url(#gRed)" opacity="0.6" rx="2"/>
         </g>
         
         {/* Animated Trend Line */}

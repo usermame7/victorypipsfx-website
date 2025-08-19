@@ -41,7 +41,7 @@ export default function StatCounter({ target, suffix = "", label, delay = 0 }: S
       const interval = setInterval(() => {
         currentStep++;
         const newCount = Math.min(currentStep * stepValue, target);
-        setCount(Math.floor(newCount));
+        setCount(target === 95.7 ? Math.round(newCount * 10) / 10 : Math.floor(newCount));
 
         if (currentStep >= steps) {
           clearInterval(interval);
