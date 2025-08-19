@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* VictoryPipsFX Brand Colors */
+  --bg: hsl(211, 48%, 6%);
+  --text: hsl(204, 16%, 89%);
+  --muted: hsl(212, 15%, 77%);
+  --accent: hsl(184, 100%, 44%);
+  --accent2: hsl(195, 100%, 42%);
+  --green1: hsl(155, 86%, 52%);
+  --green2: hsl(150, 94%, 41%);
+  --red1: hsl(0, 85%, 70%);
+  --red2: hsl(0, 100%, 61%);
+  --glass-bg: hsla(0, 0%, 100%, 0.05);
+  --glass-border: hsla(0, 0%, 100%, 0.1);
+  --shadow-light: hsla(184, 100%, 44%, 0.15);
+  --shadow-dark: hsla(0, 0%, 0%, 0.3);
+
+  /* Updated theme variables */
+  --background: hsl(211, 48%, 6%);
+  --foreground: hsl(204, 16%, 89%);
+  --card: hsla(0, 0%, 100%, 0.05);
+  --card-foreground: hsl(204, 16%, 89%);
+  --popover: hsl(211, 48%, 8%);
+  --popover-foreground: hsl(204, 16%, 89%);
+  --primary: hsl(184, 100%, 44%);
+  --primary-foreground: hsl(211, 48%, 6%);
+  --secondary: hsl(212, 15%, 15%);
+  --secondary-foreground: hsl(204, 16%, 89%);
+  --muted: hsl(212, 15%, 15%);
+  --muted-foreground: hsl(212, 15%, 77%);
+  --accent: hsl(184, 100%, 44%);
+  --accent-foreground: hsl(211, 48%, 6%);
+  --destructive: hsl(0, 85%, 60%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --border: hsla(0, 0%, 100%, 0.1);
+  --input: hsla(0, 0%, 100%, 0.1);
+  --ring: hsl(184, 100%, 44%);
+
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --radius: 1rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    min-height: 100vh;
+    overflow-x: hidden;
+    line-height: 1.6;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  /* Enhanced Background System */
+  .bg-gradient-custom {
+    background: 
+      radial-gradient(1400px 700px at 85% -5%, hsla(195, 100%, 42%, 0.32), transparent 65%),
+      radial-gradient(1000px 600px at 5% 95%, hsla(184, 100%, 44%, 0.28), transparent 65%),
+      radial-gradient(800px 400px at 50% 50%, hsla(155, 86%, 52%, 0.08), transparent 70%),
+      var(--bg);
+  }
+
+  .bg-particles {
+    background-image: 
+      radial-gradient(2px 2px at 20% 30%, hsla(184, 100%, 44%, 0.3), transparent),
+      radial-gradient(1px 1px at 40% 70%, hsla(0, 0%, 100%, 0.2), transparent),
+      radial-gradient(1px 1px at 90% 40%, hsla(195, 100%, 42%, 0.3), transparent),
+      radial-gradient(2px 2px at 60% 80%, hsla(155, 86%, 52%, 0.2), transparent);
+    background-size: 300px 300px, 200px 200px, 250px 250px, 180px 180px;
+  }
+
+  /* Glassmorphism Effects */
+  .glass {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(20px) saturate(180%);
+  }
+
+  .glass-card {
+    @apply glass rounded-2xl;
+    box-shadow: 
+      0 20px 40px var(--shadow-dark),
+      inset 0 1px 0 hsla(0, 0%, 100%, 0.1);
+  }
+
+  /* Button Enhancements */
+  .btn-gradient {
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    background-size: 200% 200%;
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+  }
+
+  .btn-gradient::after {
+    content: "";
+    position: absolute;
+    inset: 0 -80% 0 -80%;
+    z-index: -1;
+    background: linear-gradient(115deg, transparent 25%, hsla(0, 0%, 100%, 0.4) 50%, transparent 75%);
+    transform: translateX(-100%);
+    transition: transform 0.8s ease;
+  }
+
+  .btn-gradient:hover::after {
+    transform: translateX(100%);
+  }
+
+  /* Animation Classes */
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-glow {
+    animation: glow 4s ease-in-out infinite;
+  }
+
+  .animate-bg-shift {
+    animation: bgShift 20s ease-in-out infinite alternate;
+  }
+
+  .animate-particles {
+    animation: particlesFloat 25s linear infinite;
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s ease forwards;
+  }
+
+  .animate-ripple {
+    animation: ripple 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+
+  /* Scroll indicator */
+  .scroll-indicator {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent), var(--accent2));
+    transform-origin: left;
+    transform: scaleX(0);
+    z-index: 50;
+    transition: transform 0.1s ease;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(135deg, var(--text), var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .shadow-glow {
+    box-shadow: 0 0 30px hsla(184, 100%, 44%, 0.3);
+  }
+
+  .shadow-glow-strong {
+    box-shadow: 0 0 50px hsla(184, 100%, 44%, 0.5);
+  }
+}
+
+/* Keyframes */
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotateY(0deg); }
+  50% { transform: translateY(-10px) rotateY(2deg); }
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 16px 40px hsla(195, 100%, 42%, 0.4),
+                0 0 0 1px hsla(0, 0%, 100%, 0.15) inset,
+                0 3px 0 hsla(0, 0%, 100%, 0.25) inset;
+  }
+  50% {
+    box-shadow: 0 20px 50px hsla(155, 86%, 52%, 0.5),
+                0 0 0 1px hsla(0, 0%, 100%, 0.15) inset,
+                0 3px 0 hsla(0, 0%, 100%, 0.25) inset;
+  }
+}
+
+@keyframes bgShift {
+  0% { transform: scale(1) rotate(0deg); }
+  100% { transform: scale(1.05) rotate(1deg); }
+}
+
+@keyframes particlesFloat {
+  0% { transform: translateY(0px) translateX(0px); }
+  25% { transform: translateY(-20px) translateX(10px); }
+  50% { transform: translateY(-10px) translateX(-5px); }
+  75% { transform: translateY(-30px) translateX(8px); }
+  100% { transform: translateY(0px) translateX(0px); }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes ripple {
+  from { width: 0; height: 0; opacity: 0.9; }
+  to { width: 300px; height: 300px; opacity: 0; }
+}
+
+@keyframes gradMove {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .glass-card {
+    @apply p-4;
+  }
+}
