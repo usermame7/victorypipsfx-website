@@ -2,6 +2,16 @@
 
 VictoryPipsFX is a modern web application for forex and gold (XAU) trading education. The platform provides smart chart alerts, trading signals, and educational content for traders aged 18+. Built as a full-stack application with a React frontend and Express backend, it features a sophisticated dark-themed UI with VictoryPipsFX branding and integrates with Telegram for community engagement.
 
+## Recent Changes (Aug 19, 2025)
+
+### Production Deployment Fixes
+- Enhanced server environment detection for production deployments
+- Improved static file serving with proper path resolution
+- Added comprehensive error handling and logging for production builds
+- Created deployment verification script for pre-deployment checks
+- Fixed NODE_ENV production environment configuration
+- Resolved build directory path issues for Replit deployments
+
 # User Preferences
 
 Preferred communication style: Simple, everyday language.
@@ -66,3 +76,27 @@ Preferred communication style: Simple, everyday language.
 - **Custom Color Palette**: VictoryPipsFX brand colors with cyan/teal accents
 - **Google Fonts**: Inter font family for typography
 - **Chart Visualizations**: SVG-based trading chart backgrounds and animations
+
+# Deployment Configuration
+
+## Production Build Process
+1. **Frontend Build**: `vite build` creates optimized assets in `dist/public/`
+2. **Backend Build**: `esbuild` bundles server code to `dist/index.js`
+3. **Static Serving**: Production server serves files from `dist/public/` directory
+
+## Deployment Verification
+- Run verification script: `node scripts/verify-deployment.js`
+- Checks build artifacts, static files, and configuration
+- Ensures all components are ready for production deployment
+
+## Environment Configuration
+- **Development**: `NODE_ENV=development` (uses Vite dev server)
+- **Production**: `NODE_ENV=production` (serves static files)
+- Server automatically detects environment and configures accordingly
+
+## Troubleshooting Deployment Issues
+1. **Build failures**: Ensure all dependencies are installed (`npm install`)
+2. **Missing static files**: Run `npm run build` before deployment
+3. **Environment detection**: Verify NODE_ENV is set to "production"
+4. **Path resolution**: Built files must be in `dist/public/` directory
+5. **Port configuration**: Default port 5000, configurable via PORT environment variable
