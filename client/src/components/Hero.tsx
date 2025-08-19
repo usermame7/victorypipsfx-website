@@ -45,7 +45,7 @@ export default function Hero() {
           <div className="flex flex-wrap justify-center gap-3 mb-8">
             {[
               { icon: "📈", text: "Chart Analysis" },
-              { icon: "⚡", text: "Entry/Exit" },
+              { icon: "⚡", text: "Join & Profit Daily!" },
               { icon: "🎯", text: "Risk & Sizing" },
               { icon: "📚", text: "Education" }
             ].map((chip, index) => (
