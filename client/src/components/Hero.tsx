@@ -59,7 +59,7 @@ export default function Hero() {
           {/* Stats */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto mb-16">
             <StatCounter 
-              target={25000}
+              target={30000}
               suffix="+"
               label="Active Members"
               delay={0.2}
