@@ -36,9 +36,7 @@ export default function Testimonials() {
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <div className={`text-center mb-16 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <h2 className="text-3xl md:text-5xl font-black mb-4 text-gradient">
-            Real Member Results
-          </h2>
+          <h2 className="text-3xl md:text-5xl font-black mb-4 text-gradient">Happy Member Results</h2>
           <p className="text-vpfx-muted text-lg max-w-2xl mx-auto">
             See how our members are achieving consistent profits with our premium GOLD and Forex signals
           </p>
