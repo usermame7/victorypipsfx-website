@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>VictoryPipsFX — Smart Chart Alerts</title>
+<meta name="description" content="Smart chart alerts for XAU & FX. Education only. 18+."/>
+<style>
+  :root{
+    --bg:#071018;
+    --text:#e8edf2; --muted:#c2c9d3;
+    --accent:#00e0d6; --accent2:#00b4d8;
+    --bg-image-url: ""; /* optional: url('https://your-chart.jpg') */
+    --green1:#18f07f; --green2:#08c966;
+    --red1:#ff6b6b;  --red2:#ff3b3b;
+  }
+  *{box-sizing:border-box} html,body{height:100%}
+  body{margin:0;font-family:ui-sans-serif,system-ui,Segoe UI,Roboto,Arial;background:var(--bg);color:var(--text);line-height:1.5;overflow-x:hidden}
+
+  .bg-wrap{position:fixed;inset:0;z-index:-3;pointer-events:none;
+    background:
+      radial-gradient(1200px 600px at 80% -10%, rgba(0,180,216,.28), transparent 60%),
+      radial-gradient(900px 500px at 0% 100%, rgba(0,224,214,.25), transparent 60%),
+      var(--bg);}
+  .bg-photo{position:fixed;inset:-2% -2% -2% -2%;z-index:-2;pointer-events:none;opacity:.28;
+    background-image: var(--bg-image-url);
+    background-size:cover;background-position:center;filter: blur(12px) saturate(118%) brightness(78%);}
+  .bg-overlay{position:fixed;inset:0;z-index:-1;pointer-events:none;
+    background:linear-gradient(180deg,rgba(7,16,24,.06),rgba(7,16,24,.22) 35%,rgba(7,16,24,.52) 70%);}
+
+  .container{max-width:1100px;margin:0 auto;padding:24px}
+  header{position:sticky;top:0;z-index:10;padding:10px 0;background:rgba(7,16,24,.25);backdrop-filter:blur(6px)}
+  .nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
+  .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.3px}
+  .brand-mark{width:38px;height:38px;border-radius:12px;overflow:hidden;box-shadow:0 18px 40px rgba(0,0,0,.45)}
+  .brand-mark img{width:100%;height:100%;object-fit:cover;display:block}
+
+  .hero{display:grid;grid-template-columns:1fr;text-align:center;padding:56px 0 12px}
+  .hero-logo{width:clamp(150px,24vw,260px);height:auto;display:inline-block;border-radius:18px;box-shadow:0 18px 40px rgba(0,0,0,.45)}
+  h1{font-size:clamp(28px,5vw,56px);margin:12px 0 4px;line-height:1.06}
+  .sub{color:var(--muted);margin:0 0 10px}
+  .chips{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:10px 0 14px}
+  .chip{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);padding:8px 12px;border-radius:999px;font-weight:700;backdrop-filter:blur(2px)}
+
+  .cta-row{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+  .btn-tele{
+    position:relative; display:inline-flex; align-items:center; gap:10px;
+    padding:16px 22px; border-radius:16px; isolation:isolate;
+    color:#06131a; font-weight:900; text-decoration:none; letter-spacing:.2px;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    box-shadow:
+      0 12px 28px rgba(0,180,216,.35),
+      0 0 0 1px rgba(255,255,255,.12) inset,
+      0 2px 0 rgba(255,255,255,.18) inset;
+    transform: translateZ(0);
+    transition: transform .18s ease, box-shadow .18s ease, filter .18s ease;
+    overflow:hidden;
+    background-size: 200% 200%;
+    animation: gradmove 6s linear infinite alternate, glow 3s ease-in-out infinite;
+  }
+  @keyframes gradmove{0%{background-position:0% 50%}100%{background-position:100% 50%}}
+  @keyframes glow{0%,100%{box-shadow:0 12px 28px rgba(0,180,216,.35),0 0 0 1px rgba(255,255,255,.12) inset,0 2px 0 rgba(255,255,255,.18) inset}50%{box-shadow:0 14px 36px rgba(57,255,209,.45),0 0 0 1px rgba(255,255,255,.12) inset,0 2px 0 rgba(255,255,255,.18) inset}}
+  .btn-tele::after{
+    content:""; position:absolute; inset:0 -60% 0 -60%; z-index:-1;
+    background: linear-gradient(115deg, rgba(255,255,255,.0) 30%, rgba(255,255,255,.38) 50%, rgba(255,255,255,.0) 70%);
+    transform: translateX(-100%); transition: transform .65s ease;
+  }
+  .btn-tele:hover::after{ transform: translateX(60%); }
+  .btn-tele:hover{ transform: translateY(-1px) scale(1.02); }
+  .btn-tele:active{ transform: translateY(1px) scale(.995); animation:none; }
+  .btn-tele svg{width:20px;height:20px}
+
+  .ripple{ position:absolute; border-radius:999px; transform:translate(-50%,-50%);
+    pointer-events:none; background:rgba(255,255,255,.45); filter: blur(1px); animation:rip .6s ease-out forwards }
+  @keyframes rip{ from{width:0;height:0;opacity:.8} to{width:260px;height:260px;opacity:0} }
+
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
+  .card{background:rgba(7,16,24,.45);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:14px;box-shadow:0 18px 40px rgba(0,0,0,.45);text-align:center}
+  .card strong{display:block;margin-bottom:4px}
+  footer{margin-top:24px;padding:20px 0 44px;color:#c7d2dc;font-size:14px;text-align:center}
+  footer .muted{color:#aeb7c2}
+  @media (max-width:840px){.cards{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+  <div class="bg-wrap"></div>
+  <div class="bg-photo"></div>
+  <div class="bg-overlay"></div>
+
+  <!-- SVG background element -->
+  <svg class="bg-svg" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true"
+       style="position:fixed;inset:-2% -2% -2% -2%;z-index:-1;opacity:.96;filter:saturate(115%) contrast(112%);pointer-events:none">
+    <defs>
+      <linearGradient id="gGreen" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#18f07f"/>
+        <stop offset="100%" stop-color="#08c966"/>
+      </linearGradient>
+      <linearGradient id="gRed" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#ff6b6b"/>
+        <stop offset="100%" stop-color="#ff3b3b"/>
+      </linearGradient>
+    </defs>
+    <g stroke="#153044" stroke-width="1" opacity="0.55">
+      <path d="M0 820 H1440 M0 740 H1440 M0 660 H1440 M0 580 H1440 M0 500 H1440 M0 420 H1440 M0 340 H1440 M0 260 H1440 M0 180 H1440 M0 100 H1440"/>
+    </g>
+    <g stroke="url(#gGreen)" stroke-width="18" stroke-linecap="round" opacity="0.96">
+      <path d="M40 820 v-230 M120 820 v-260 M200 820 v-210 M280 820 v-200 M360 820 v-240 M440 820 v-220 M520 820 v-260 M600 820 v-240 M680 820 v-200 M760 820 v-250 M840 820 v-210 M920 820 v-280 M1000 820 v-220 M1080 820 v-260 M1160 820 v-240 M1240 820 v-200 M1320 820 v-230"/>
+    </g>
+    <g stroke="url(#gRed)" stroke-width="18" stroke-linecap="round" opacity="0.9">
+      <path d="M80 800 v-180 M160 800 v-220 M240 800 v-170 M320 800 v-190 M400 800 v-210 M480 800 v-160 M560 800 v-200 M640 800 v-180 M720 800 v-220 M800 800 v-170 M880 800 v-200 M960 800 v-190 M1040 800 v-210 M1120 800 v-170 M1200 800 v-200 M1280 800 v-180 M1360 800 v-190"/>
+    </g>
+    <g stroke="#30ffa4" stroke-width="6" stroke-linecap="round" opacity="0.85">
+      <path d="M40 560 v-40 M200 540 v-50 M360 520 v-60 M520 520 v-70 M680 540 v-50 M840 520 v-60 M1000 540 v-55 M1160 520 v-65 M1320 540 v-55"/>
+    </g>
+  </svg>
+
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="brand-mark"><img src="logo.jpg" alt="VictoryPipsFX logo"></div>
+        <span>VictoryPipsFX</span>
+      </div>
+      <a class="btn-tele" id="ctaTop" href="https://t.me/+tF9XarrDXqw5M2Y0" target="_blank" rel="noopener">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M9.04 15.3l-.38 5.33c.54 0 .78-.23 1.06-.5l2.55-2.45 5.29 3.87c.97.53 1.67.25 1.94-.9l3.52-16.5h.01c.31-1.45-.52-2.02-1.45-1.67L1.1 9.46c-1.41.55-1.39 1.34-.24 1.7l5.1 1.59 11.85-7.48c.56-.34 1.06-.15.64.21L9.04 15.3z"/></svg>
+        Join Free on Telegram
+      </a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <img class="hero-logo" src="logo.jpg" alt="VictoryPipsFX logo"/>
+      <h1>Smart Chart Alerts</h1>
+      <p class="sub">Minimal text. Clear visuals. Education only · 18+.</p>
+      <div class="chips">
+        <span class="chip">Charts &amp; Levels</span>
+        <span class="chip">Entry/Exit</span>
+        <span class="chip">Risk &amp; Sizing</span>
+      </div>
+      <div class="cta-row">
+        <a class="btn-tele" id="ctaMain" href="https://t.me/+tF9XarrDXqw5M2Y0" target="_blank" rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M9.04 15.3l-.38 5.33c.54 0 .78-.23 1.06-.5l2.55-2.45 5.29 3.87c.97.53 1.67.25 1.94-.9l3.52-16.5h.01c.31-1.45-.52-2.02-1.45-1.67L1.1 9.46c-1.41.55-1.39 1.34-.24 1.7l5.1 1.59 11.85-7.48c.56-.34 1.06-.15.64.21L9.04 15.3z"/></svg>
+          Join Free on Telegram
+        </a>
+      </div>
+      <div class="cards">
+        <div class="card"><strong>Join</strong><span>Open the channel</span></div>
+        <div class="card"><strong>See notes</strong><span>Today’s levels</span></div>
+        <div class="card"><strong>Use rules</strong><span>Structure • Risk • Exit</span></div>
+      </div>
+    </section>
+
+    <footer>
+      <div>© <span id="year"></span> VictoryPipsFX LTD. <span class="muted">Education only · 18+ · Trading involves risk of loss.</span></div>
+    </footer>
+  </main>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  function addRipple(e){
+    const btn = e.currentTarget;
+    const rect = btn.getBoundingClientRect();
+    const r = document.createElement('span');
+    r.className = 'ripple';
+    r.style.left = (e.clientX - rect.left) + 'px';
+    r.style.top  = (e.clientY - rect.top)  + 'px';
+    btn.appendChild(r);
+    setTimeout(()=> r.remove(), 650);
+  }
+  document.getElementById('ctaTop').addEventListener('click', addRipple);
+  document.getElementById('ctaMain').addEventListener('click', addRipple);
+</script>
+</body>
+</html>
