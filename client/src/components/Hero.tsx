@@ -48,12 +48,33 @@ export default function Hero() {
             ))}
           </div>
 
-          {/* CTA Button */}
-          <div className="mb-12">
+          {/* CTA Buttons */}
+          <div className="mb-12 space-y-4">
             <TelegramButton 
               href="https://t.me/+tF9XarrDXqw5M2Y0"
               size="lg"
             />
+            
+            {/* Contact Us Button */}
+            <div>
+              <a
+                href="https://t.me/+tF9XarrDXqw5M2Y0"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 px-8 py-4 rounded-2xl font-black bg-white text-slate-800 border-2 border-white transition-all duration-300 hover:-translate-y-1 hover:scale-105 active:translate-y-0 active:scale-95 hover:shadow-lg text-lg group"
+              >
+                {/* Telegram Icon */}
+                <svg 
+                  className="w-6 h-6 transition-transform duration-300 group-hover:scale-110" 
+                  xmlns="http://www.w3.org/2000/svg" 
+                  viewBox="0 0 24 24" 
+                  fill="currentColor"
+                >
+                  <path d="M9.04 15.3l-.38 5.33c.54 0 .78-.23 1.06-.5l2.55-2.45 5.29 3.87c.97.53 1.67.25 1.94-.9l3.52-16.5h.01c.31-1.45-.52-2.02-1.45-1.67L1.1 9.46c-1.41.55-1.39 1.34-.24 1.7l5.1 1.59 11.85-7.48c.56-.34 1.06-.15.64.21L9.04 15.3z"/>
+                </svg>
+                <span>Contact Us</span>
+              </a>
+            </div>
           </div>
 
           {/* Stats */}
