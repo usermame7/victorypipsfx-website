@@ -5,6 +5,7 @@ import testimonial3Image from "@assets/photo_2025-08-19_03-12-15_1755568178773.j
 
 export default function Testimonials() {
   const headerAnimation = useScrollAnimation();
+  const gridAnimation = useScrollAnimation();
   const ctaAnimation = useScrollAnimation();
 
   const testimonials = [
@@ -46,15 +47,20 @@ export default function Testimonials() {
         </div>
 
         {/* Testimonials Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {testimonials.map((testimonial, index) => {
-            const cardAnimation = useScrollAnimation();
-            return (
+        <div 
+          ref={gridAnimation.ref}
+          className={`grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto animate-fade-in-up ${gridAnimation.isVisible ? 'visible' : ''}`}
+        >
+          {testimonials.map((testimonial, index) => (
             <div 
               key={testimonial.id}
-              ref={cardAnimation.ref}
-              className={`glass-card p-6 group hover:scale-105 transition-all duration-500 hover:shadow-glow animate-fade-in-up ${cardAnimation.isVisible ? 'visible' : ''}`}
-              style={{ transitionDelay: cardAnimation.isVisible ? `${index * 200}ms` : '0ms' }}
+              className="glass-card p-6 group hover:scale-105 transition-all duration-500 hover:shadow-glow"
+              style={{ 
+                transitionDelay: gridAnimation.isVisible ? `${index * 200}ms` : '0ms',
+                opacity: gridAnimation.isVisible ? 1 : 0,
+                transform: gridAnimation.isVisible ? 'translateY(0)' : 'translateY(30px)',
+                transition: 'opacity 0.8s ease-out, transform 0.8s ease-out'
+              }}
             >
               {/* Screenshot */}
               <div className="mb-4 rounded-xl overflow-hidden shadow-lg">
@@ -85,8 +91,7 @@ export default function Testimonials() {
                 {testimonial.description}
               </p>
             </div>
-            );
-          })}
+          ))}
         </div>
 
         {/* Call to Action */}
