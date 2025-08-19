@@ -263,12 +263,12 @@
 
 @keyframes pulse-glow {
   0%, 100% { 
-    text-shadow: 0 0 5px #22d3ee, 0 0 10px #22d3ee, 0 0 15px #22d3ee; 
+    text-shadow: 0 0 3px #22d3ee, 0 0 6px #22d3ee; 
     transform: scale(1); 
   }
   50% { 
-    text-shadow: 0 0 10px #22d3ee, 0 0 20px #22d3ee, 0 0 30px #22d3ee, 0 0 40px #22d3ee; 
-    transform: scale(1.05); 
+    text-shadow: 0 0 6px #22d3ee, 0 0 12px #22d3ee, 0 0 18px #22d3ee; 
+    transform: scale(1.02); 
   }
 }
 
