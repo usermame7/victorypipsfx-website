@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>VictoryPipsFX - Trading Education Platform</title>
+    <meta name="description" content="Professional forex and gold trading education. Learn market analysis, risk management, and trading strategies with VictoryPipsFX educational content." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script type="module" crossorigin src="./assets/index-6rIYmM4J.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-o9hdGL3s.css">
+  </head>
+  <body>
+    <div id="root">
+      <div style="padding: 50px; text-align: center; background: #000; color: #fff; font-family: Inter, sans-serif;">
+        <h1>Loading VictoryPipsFX...</h1>
+        <p>If this message persists, there may be a JavaScript loading issue.</p>
+      </div>
+    </div>
+    <script>
+      console.log('Static test page loaded');
+      console.log('Assets should load from:', './assets/');
+      
+      // Check if React loaded
+      setTimeout(() => {
+        const root = document.getElementById('root');
+        if (root.children.length <= 1) {
+          console.error('React app failed to load');
+          root.innerHTML = '<div style="padding: 50px; text-align: center; background: #000; color: #ff6b6b; font-family: Inter, sans-serif;"><h1>⚠️ React App Failed to Load</h1><p>The JavaScript bundle may not be loading properly.</p></div>';
+        }
+      }, 3000);
+    </script>
+  </body>
+</html>
