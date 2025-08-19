@@ -1,14 +1,11 @@
-import { useState, useEffect } from "react";
+import { useScrollAnimation } from '@/hooks/use-scroll-animation';
 import testimonial1Image from "@assets/photo_2025-08-19_03-11-45_1755568178773.jpg";
 import testimonial2Image from "@assets/photo_2025-08-19_03-11-52_1755568178773.jpg";
 import testimonial3Image from "@assets/photo_2025-08-19_03-12-15_1755568178773.jpg";
 
 export default function Testimonials() {
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    setIsVisible(true);
-  }, []);
+  const headerAnimation = useScrollAnimation();
+  const ctaAnimation = useScrollAnimation();
 
   const testimonials = [
     {
@@ -38,7 +35,10 @@ export default function Testimonials() {
     <section className="py-20 relative">
       <div className="container mx-auto px-6">
         {/* Section Header */}
-        <div className={`text-center mb-16 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+        <div 
+          ref={headerAnimation.ref}
+          className={`text-center mb-16 animate-fade-in-up ${headerAnimation.isVisible ? 'visible' : ''}`}
+        >
           <h2 className="text-3xl md:text-5xl font-black mb-4 text-gradient">Happy Member Results</h2>
           <p className="text-vpfx-muted text-lg max-w-2xl mx-auto">
             See how our members are achieving consistent profits with our premium GOLD and Forex signals
@@ -47,11 +47,14 @@ export default function Testimonials() {
 
         {/* Testimonials Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {testimonials.map((testimonial, index) => (
+          {testimonials.map((testimonial, index) => {
+            const cardAnimation = useScrollAnimation();
+            return (
             <div 
               key={testimonial.id}
-              className={`glass-card p-6 group hover:scale-105 transition-all duration-500 hover:shadow-glow ${isVisible ? 'animate-fade-in-up' : ''}`}
-              style={{ animationDelay: `${index * 0.3}s` }}
+              ref={cardAnimation.ref}
+              className={`glass-card p-6 group hover:scale-105 transition-all duration-500 hover:shadow-glow animate-fade-in-up ${cardAnimation.isVisible ? 'visible' : ''}`}
+              style={{ transitionDelay: cardAnimation.isVisible ? `${index * 200}ms` : '0ms' }}
             >
               {/* Screenshot */}
               <div className="mb-4 rounded-xl overflow-hidden shadow-lg">
@@ -82,11 +85,15 @@ export default function Testimonials() {
                 {testimonial.description}
               </p>
             </div>
-          ))}
+            );
+          })}
         </div>
 
         {/* Call to Action */}
-        <div className={`text-center mt-16 transition-all duration-1000 delay-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+        <div 
+          ref={ctaAnimation.ref}
+          className={`text-center mt-16 animate-scale-in ${ctaAnimation.isVisible ? 'visible' : ''}`}
+        >
           <div className="glass-card p-8 max-w-2xl mx-auto">
             <h3 className="text-2xl font-black mb-4 text-vpfx-accent">
               Ready to Join Them?

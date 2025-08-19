@@ -134,9 +134,7 @@
     animation: particlesFloat 25s linear infinite;
   }
 
-  .animate-fade-in-up {
-    animation: fadeInUp 0.8s ease forwards;
-  }
+
 
   .animate-ripple {
     animation: ripple 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
@@ -152,6 +150,58 @@
 
   .animate-auto-shake {
     animation: auto-shake 7s infinite ease-in-out;
+  }
+  
+  /* Ensure auto-shake works on all button types with higher specificity */
+  .btn-gradient.animate-auto-shake,
+  a.animate-auto-shake,
+  button.animate-auto-shake {
+    animation: auto-shake 7s infinite ease-in-out !important;
+  }
+  
+  /* Scroll-based animations */
+  .animate-fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  
+  .animate-fade-in-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .animate-fade-in-left {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  
+  .animate-fade-in-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .animate-fade-in-right {
+    opacity: 0;
+    transform: translateX(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  
+  .animate-fade-in-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .animate-scale-in {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  
+  .animate-scale-in.visible {
+    opacity: 1;
+    transform: scale(1);
   }
 
   .animate-pulse-glow {

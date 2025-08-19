@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
+import { useScrollAnimation } from '@/hooks/use-scroll-animation';
 import TelegramButton from "./TelegramButton";
 import StatCounter from "./StatCounter";
 import logoImage from "@assets/logo_1755568189581.jpg";
 
 export default function Hero() {
   const [isVisible, setIsVisible] = useState(false);
+  const statsAnimation = useScrollAnimation();
 
   useEffect(() => {
     setIsVisible(true);
@@ -84,7 +86,10 @@ export default function Hero() {
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto mb-16">
+          <div 
+            ref={statsAnimation.ref}
+            className={`grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto mb-16 animate-fade-in-up ${statsAnimation.isVisible ? 'visible' : ''}`}
+          >
             <StatCounter 
               target={25}
               suffix="K+"
