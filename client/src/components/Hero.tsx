@@ -28,7 +28,7 @@ export default function Hero() {
           Forex Signals Daily</h1>
 
           {/* Subtitle */}
-          <p className="text-vpfx-muted text-lg md:text-xl max-w-2xl mx-auto mb-6 font-medium">From a team of Professional Traders for FREE </p>
+          <p className="text-vpfx-muted text-lg md:text-xl max-w-2xl mx-auto mb-6 font-medium">From a Team of Professional Traders for FREE </p>
 
           {/* Feature Chips */}
           <div className="flex flex-wrap justify-center gap-3 mb-8">
