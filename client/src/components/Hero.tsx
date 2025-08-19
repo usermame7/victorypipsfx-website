@@ -75,7 +75,7 @@ export default function Hero() {
                 <span className="relative z-10">Contact Us</span>
                 
                 {/* Shimmer Effect */}
-                <div className="absolute inset-0 -top-2 -left-2 bg-gradient-to-r from-transparent via-white/30 to-transparent w-6 h-full transform -skew-x-12 opacity-0 group-hover:opacity-100 group-hover:animate-shimmer transition-opacity duration-300"></div>
+                <div className="absolute inset-0 -top-2 -left-2 bg-gradient-to-r from-transparent via-slate-400/60 to-transparent w-8 h-full transform -skew-x-12 opacity-0 group-hover:opacity-100 group-hover:animate-shimmer transition-opacity duration-300"></div>
               </a>
             </div>
           </div>
