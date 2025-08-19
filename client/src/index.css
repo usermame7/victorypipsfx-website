@@ -148,6 +148,11 @@
     animation: shake-vertical 0.5s ease-in-out;
   }
 
+  /* Hover shake animation for buttons */
+  .hover-shake:hover {
+    animation: hover-shake 0.6s ease-in-out;
+  }
+
   .animate-auto-shake {
     animation: auto-shake 7s infinite ease-in-out;
   }
@@ -317,6 +322,19 @@
   94% { transform: translateX(4px) translateY(1px) scale(1.01); }
   94.5% { transform: translateX(-2px) translateY(0) scale(1); }
   95% { transform: translateX(2px) translateY(0) scale(1); }
+}
+
+@keyframes hover-shake {
+  0%, 100% { transform: translateX(0) translateY(0) scale(1); }
+  10% { transform: translateX(-5px) translateY(-2px) scale(1.02); }
+  20% { transform: translateX(5px) translateY(2px) scale(1.02); }
+  30% { transform: translateX(-3px) translateY(-1px) scale(1.01); }
+  40% { transform: translateX(3px) translateY(1px) scale(1.01); }
+  50% { transform: translateX(-2px) translateY(0) scale(1); }
+  60% { transform: translateX(2px) translateY(0) scale(1); }
+  70% { transform: translateX(-1px) translateY(0) scale(1); }
+  80% { transform: translateX(1px) translateY(0) scale(1); }
+  90% { transform: translateX(0) translateY(0) scale(1); }
 }
 
 @keyframes pulse-glow {

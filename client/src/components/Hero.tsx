@@ -7,6 +7,7 @@ import logoImage from "@assets/logo_1755568189581.jpg";
 export default function Hero() {
   const [isVisible, setIsVisible] = useState(false);
   const statsAnimation = useScrollAnimation();
+  const infoCardsAnimation = useScrollAnimation();
 
   useEffect(() => {
     setIsVisible(true);
@@ -69,7 +70,7 @@ export default function Hero() {
                 href="https://t.me/m/43q_ouSRODk0"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 px-8 py-4 rounded-2xl font-black bg-white text-slate-800 border-2 border-white transition-all duration-300 hover:-translate-y-1 hover:scale-105 hover:animate-shake-vertical active:translate-y-0 active:scale-95 hover:shadow-lg animate-auto-shake text-lg"
+                className="inline-flex items-center gap-3 px-8 py-4 rounded-2xl font-black bg-white text-slate-800 border-2 border-white transition-all duration-300 hover:-translate-y-1 hover:scale-105 active:translate-y-0 active:scale-95 hover:shadow-lg animate-auto-shake hover-shake text-lg"
               >
                 {/* Telegram Icon */}
                 <svg 
@@ -111,7 +112,10 @@ export default function Hero() {
           </div>
 
           {/* Info Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          <div 
+            ref={infoCardsAnimation.ref}
+            className={`grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto animate-fade-in-up ${infoCardsAnimation.isVisible ? 'visible' : ''}`}
+          >
             {[
               {
                 icon: "💎",
@@ -131,8 +135,8 @@ export default function Hero() {
             ].map((card, index) => (
               <div 
                 key={index}
-                className={`glass-card p-6 text-center group hover:scale-105 transition-all duration-500 hover:shadow-glow ${isVisible ? 'animate-fade-in-up' : ''}`}
-                style={{ animationDelay: `${index * 0.2}s` }}
+                className="glass-card p-6 text-center group hover:scale-105 transition-all duration-500 hover:shadow-glow"
+                style={{ transitionDelay: infoCardsAnimation.isVisible ? `${index * 200}ms` : '0ms' }}
               >
                 <div className="text-3xl mb-3 group-hover:scale-110 transition-transform duration-300">
                   {card.icon}
