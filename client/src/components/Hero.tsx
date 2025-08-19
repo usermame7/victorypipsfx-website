@@ -39,12 +39,7 @@ export default function Hero() {
             </span>
           </p>
           
-          {/* Prominent Risk Warning */}
-          <div className="bg-red-900/20 border border-red-600/30 rounded-lg p-3 mb-6 max-w-2xl mx-auto">
-            <p className="text-red-200 text-sm font-semibold">
-              ⚠️ Trading involves substantial risk of loss. Educational content only. 18+ required.
-            </p>
-          </div>
+
 
           {/* Feature Chips */}
           <div className="flex flex-wrap justify-center gap-3 mb-8">

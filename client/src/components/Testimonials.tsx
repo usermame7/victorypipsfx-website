@@ -45,13 +45,7 @@ export default function Testimonials() {
             See how our members are progressing with our educational GOLD and Forex content
           </p>
           
-          {/* Risk Disclaimer */}
-          <div className="bg-yellow-900/20 border border-yellow-600/30 rounded-lg p-4 mt-6 max-w-3xl mx-auto">
-            <p className="text-yellow-200 text-sm font-semibold">
-              ⚠️ IMPORTANT: Results shown are not typical and do not guarantee future success. 
-              Trading involves substantial risk of loss. Educational content only.
-            </p>
-          </div>
+
         </div>
 
         {/* Testimonials Grid */}
