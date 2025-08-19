@@ -151,7 +151,7 @@
   }
 
   .animate-auto-shake {
-    animation: auto-shake 7s infinite ease-in-out;
+    animation: auto-shake 6s infinite ease-in-out !important;
   }
 
   .animate-pulse-glow {
@@ -256,14 +256,18 @@
 }
 
 @keyframes auto-shake {
-  0%, 96%, 100% { transform: translateX(0) translateY(0) scale(1); }
-  96.5% { transform: translateX(-6px) translateY(-2px) scale(1.02); }
-  97% { transform: translateX(6px) translateY(2px) scale(1.02); }
-  97.5% { transform: translateX(-4px) translateY(-1px) scale(1.01); }
-  98% { transform: translateX(4px) translateY(1px) scale(1.01); }
-  98.5% { transform: translateX(-2px) translateY(0) scale(1); }
-  99% { transform: translateX(2px) translateY(0) scale(1); }
-  99.5% { transform: translateX(0) translateY(0) scale(1); }
+  0%, 92%, 100% { transform: translateX(0) translateY(0) scale(1) !important; }
+  92.5% { transform: translateX(-10px) translateY(-4px) scale(1.04) !important; }
+  93% { transform: translateX(10px) translateY(4px) scale(1.04) !important; }
+  93.5% { transform: translateX(-8px) translateY(-3px) scale(1.03) !important; }
+  94% { transform: translateX(8px) translateY(3px) scale(1.03) !important; }
+  94.5% { transform: translateX(-6px) translateY(-2px) scale(1.02) !important; }
+  95% { transform: translateX(6px) translateY(2px) scale(1.02) !important; }
+  95.5% { transform: translateX(-4px) translateY(-1px) scale(1.01) !important; }
+  96% { transform: translateX(4px) translateY(1px) scale(1.01) !important; }
+  96.5% { transform: translateX(-2px) translateY(0) scale(1) !important; }
+  97% { transform: translateX(2px) translateY(0) scale(1) !important; }
+  97.5%, 98%, 99% { transform: translateX(0) translateY(0) scale(1) !important; }
 }
 
 @keyframes pulse-glow {
