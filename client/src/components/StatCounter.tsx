@@ -57,8 +57,9 @@ export default function StatCounter({ target, suffix = "", label, delay = 0 }: S
 
   return (
     <div ref={ref} className="text-center p-6">
-      <div className="text-4xl md:text-5xl font-black text-gradient mb-2">
-        {count}{suffix}
+      <div className="text-4xl md:text-5xl font-black text-gradient mb-2 flex items-center justify-center gap-1">
+        <span>{count}</span>
+        {suffix && <span className="ml-1">{suffix}</span>}
       </div>
       <div className="text-sm uppercase tracking-wider text-[#ffffff] font-bold">
         {label}
