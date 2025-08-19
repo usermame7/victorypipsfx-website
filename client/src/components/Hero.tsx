@@ -58,7 +58,7 @@ export default function Hero() {
             {/* Contact Us Button */}
             <div>
               <a
-                href="https://t.me/+tF9XarrDXqw5M2Y0"
+                href="https://t.me/m/43q_ouSRODk0"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 px-8 py-4 rounded-2xl font-black bg-white text-slate-800 border-2 border-white transition-all duration-300 hover:-translate-y-1 hover:scale-105 active:translate-y-0 active:scale-95 hover:shadow-lg text-lg group"
