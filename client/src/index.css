@@ -151,7 +151,11 @@
   }
 
   .animate-auto-shake {
-    animation: auto-shake 7s infinite ease-in-out;
+    animation: auto-shake 5s infinite ease-in-out;
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
   }
 
   /* Scroll indicator */
@@ -252,9 +256,20 @@
 }
 
 @keyframes auto-shake {
-  0%, 92.8%, 100% { transform: translateX(0); }
-  93%, 93.4%, 94.2%, 95%, 95.8% { transform: translateX(-2px); }
-  93.2%, 93.6%, 94.4%, 94.8%, 95.6% { transform: translateX(2px); }
+  0%, 90%, 100% { transform: translateX(0); }
+  91%, 92%, 93.5%, 95%, 96.5% { transform: translateX(-2px); }
+  91.5%, 92.5%, 94%, 95.5%, 97% { transform: translateX(2px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { 
+    text-shadow: 0 0 5px #22d3ee, 0 0 10px #22d3ee, 0 0 15px #22d3ee; 
+    transform: scale(1); 
+  }
+  50% { 
+    text-shadow: 0 0 10px #22d3ee, 0 0 20px #22d3ee, 0 0 30px #22d3ee, 0 0 40px #22d3ee; 
+    transform: scale(1.05); 
+  }
 }
 
 /* Responsive adjustments */
