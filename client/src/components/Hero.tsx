@@ -95,8 +95,8 @@ export default function Hero() {
               delay={0.4}
             />
             <StatCounter 
-              target={5}
-              suffix=""
+              target={3}
+              suffix="-5"
               label="Strong Daily Signals"
               delay={0.6}
             />
