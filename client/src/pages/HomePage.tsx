@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Testimonials from "@/components/Testimonials";
 import ChartBackground from "@/components/ChartBackground";
+import Footer from "@/components/Footer";
 
 export default function HomePage() {
   useEffect(() => {
@@ -44,6 +45,7 @@ export default function HomePage() {
       <Header />
       <Hero />
       <Testimonials />
+      <Footer />
     </div>
   );
 }
