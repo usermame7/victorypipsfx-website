@@ -24,9 +24,7 @@ export default function Hero() {
           </div>
 
           {/* Title */}
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-black mb-4 text-gradient tracking-tight leading-tight">
-            Get Powerful GOLD and Forex Signals Daily
-          </h1>
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-black mb-4 text-gradient tracking-tight leading-tight bg-[#e6e8edd4]">Get Powerful Forex Signals Daily</h1>
 
           {/* Subtitle */}
           <p className="text-vpfx-muted text-lg md:text-xl max-w-2xl mx-auto mb-6 font-medium">
