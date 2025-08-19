@@ -38,7 +38,7 @@ export default function Hero() {
           {/* Feature Chips */}
           <div className="flex flex-wrap justify-center gap-3 mb-8">
             {[
-              { icon: "📈", text: "Charts & Levels" },
+              { icon: "📈", text: "Chart Analysis" },
               { icon: "⚡", text: "Entry/Exit" },
               { icon: "🎯", text: "Risk & Sizing" },
               { icon: "📚", text: "Education" }
