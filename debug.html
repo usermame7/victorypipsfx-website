@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VictoryPipsFX Debug</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #000; color: #fff; }
+        .debug { background: #222; padding: 20px; border-radius: 8px; margin: 10px 0; }
+        .error { color: #ff6b6b; }
+        .success { color: #51cf66; }
+    </style>
+</head>
+<body>
+    <h1>VictoryPipsFX Debug Page</h1>
+    <div class="debug">
+        <h2>Build Status</h2>
+        <p class="success">✅ Static files generated successfully</p>
+        <p>If you see this page, the build is working!</p>
+    </div>
+    
+    <div class="debug">
+        <h2>Expected Files</h2>
+        <ul>
+            <li>index.html (main page)</li>
+            <li>assets/index-*.js (React app)</li>
+            <li>assets/index-*.css (styles)</li>
+            <li>assets/logo_*.jpg (VictoryPipsFX logo)</li>
+            <li>assets/photo_*.jpg (testimonials)</li>
+        </ul>
+    </div>
+
+    <div class="debug">
+        <h2>Vercel Deployment Settings</h2>
+        <p><strong>Framework:</strong> Vite</p>
+        <p><strong>Build Command:</strong> vite build</p>
+        <p><strong>Output Directory:</strong> dist/public</p>
+        <p><strong>Install Command:</strong> npm install</p>
+    </div>
+
+    <script>
+        console.log('Debug page loaded successfully');
+        console.log('Current location:', window.location.href);
+    </script>
+</body>
+</html>

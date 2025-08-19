@@ -7,10 +7,18 @@ This VictoryPipsFX project should be deployed as a **static frontend only** on V
 ## ✅ Vercel Deployment Steps
 
 ### 1. Project Settings in Vercel
-- **Framework Preset**: Vite
-- **Build Command**: `vite build`
-- **Output Directory**: `dist/public`
+- **Framework Preset**: Vite  
+- **Build Command**: `vite build && cp -r dist/public/* .`
+- **Output Directory**: `.` (root directory)
 - **Install Command**: `npm install`
+
+### Alternative Simple Setup:
+- **Framework Preset**: Other
+- **Build Command**: Leave empty
+- **Output Directory**: Leave empty
+- **Install Command**: Leave empty
+
+The static files are now in the root directory for easier deployment.
 
 ### 2. Environment Variables (if needed)
 No environment variables are required for the static frontend deployment.
