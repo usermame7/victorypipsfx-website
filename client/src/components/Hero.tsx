@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import TelegramButton from "./TelegramButton";
 import StatCounter from "./StatCounter";
+import logoImage from "@assets/logo_1755568189581.jpg";
 
 export default function Hero() {
   const [isVisible, setIsVisible] = useState(false);
@@ -17,7 +18,7 @@ export default function Hero() {
           {/* Logo */}
           <div className="mb-8">
             <img 
-              src="@assets/logo_1755568189581.jpg"
+              src={logoImage}
               alt="VictoryPipsFX logo"
               className="w-48 h-48 md:w-64 md:h-64 mx-auto rounded-3xl shadow-2xl animate-float hover:scale-105 transition-transform duration-500 shadow-glow"
             />

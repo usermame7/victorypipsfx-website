@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import TelegramButton from "./TelegramButton";
+import logoImage from "@assets/logo_1755568189581.jpg";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -28,7 +29,7 @@ export default function Header() {
             <div className="relative">
               <div className="w-10 h-10 rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-glow border border-white/10">
                 <img 
-                  src="@assets/logo_1755568189581.jpg"
+                  src={logoImage}
                   alt="VictoryPipsFX logo"
                   className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                 />

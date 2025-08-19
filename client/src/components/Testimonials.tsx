@@ -1,4 +1,7 @@
 import { useState, useEffect } from "react";
+import testimonial1Image from "@assets/photo_2025-08-19_03-11-45_1755568178773.jpg";
+import testimonial2Image from "@assets/photo_2025-08-19_03-11-52_1755568178773.jpg";
+import testimonial3Image from "@assets/photo_2025-08-19_03-12-15_1755568178773.jpg";
 
 export default function Testimonials() {
   const [isVisible, setIsVisible] = useState(false);
@@ -10,21 +13,21 @@ export default function Testimonials() {
   const testimonials = [
     {
       id: 1,
-      image: "@assets/photo_2025-08-19_03-11-45_1755568178773.jpg",
+      image: testimonial1Image,
       result: "£1800 in 4 days",
       feedback: "Fantastic! 👏",
       description: "New member achieved amazing results following our XAUUSD signals"
     },
     {
       id: 2,
-      image: "@assets/photo_2025-08-19_03-11-52_1755568178773.jpg",
+      image: testimonial2Image,
       result: "$986.35 profit",
       feedback: "A grand extra per week... From here I can only go higher 💪 Sensational!!",
       description: "Consistent weekly profits with our premium signals"
     },
     {
       id: 3,
-      image: "@assets/photo_2025-08-19_03-12-15_1755568178773.jpg",
+      image: testimonial3Image,
       result: "$706.07 profit",
       feedback: "Hi. I'm a newbee. This is wk3 for me",
       description: "Even beginners are seeing success with our structured approach"
