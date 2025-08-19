@@ -150,7 +150,12 @@
 
   /* Hover shake animation for buttons */
   .hover-shake:hover {
-    animation: hover-shake 0.6s ease-in-out;
+    animation: hover-shake 0.6s ease-in-out !important;
+  }
+  
+  /* Ensure hover animation takes priority over auto-shake */
+  .hover-shake:hover.animate-auto-shake {
+    animation: hover-shake 0.6s ease-in-out !important;
   }
 
   .animate-auto-shake {
