@@ -74,7 +74,7 @@ export default function TelegramButton({
       </svg>
 
       {/* Button Text */}
-      <span>{children || "Join Free on Telegram"}</span>
+      <span>{children || "Join our Free VIP"}</span>
     </a>
   );
 }
