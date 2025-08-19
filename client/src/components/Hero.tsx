@@ -61,7 +61,7 @@ export default function Hero() {
                 href="https://t.me/m/43q_ouSRODk0"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 px-8 py-4 rounded-2xl font-black bg-white text-slate-800 border-2 border-white transition-all duration-300 hover:-translate-y-1 hover:scale-105 active:translate-y-0 active:scale-95 hover:shadow-lg text-lg group"
+                className="relative inline-flex items-center gap-3 px-8 py-4 rounded-2xl font-black bg-white text-slate-800 border-2 border-white transition-all duration-300 hover:-translate-y-1 hover:scale-105 active:translate-y-0 active:scale-95 hover:shadow-lg text-lg group overflow-hidden"
               >
                 {/* Telegram Icon */}
                 <svg 
@@ -72,7 +72,10 @@ export default function Hero() {
                 >
                   <path d="M9.04 15.3l-.38 5.33c.54 0 .78-.23 1.06-.5l2.55-2.45 5.29 3.87c.97.53 1.67.25 1.94-.9l3.52-16.5h.01c.31-1.45-.52-2.02-1.45-1.67L1.1 9.46c-1.41.55-1.39 1.34-.24 1.7l5.1 1.59 11.85-7.48c.56-.34 1.06-.15.64.21L9.04 15.3z"/>
                 </svg>
-                <span>Contact Us</span>
+                <span className="relative z-10">Contact Us</span>
+                
+                {/* Shimmer Effect */}
+                <div className="absolute inset-0 -top-2 -left-2 bg-gradient-to-r from-transparent via-white/30 to-transparent w-6 h-full transform -skew-x-12 opacity-0 group-hover:opacity-100 group-hover:animate-shimmer transition-opacity duration-300"></div>
               </a>
             </div>
           </div>

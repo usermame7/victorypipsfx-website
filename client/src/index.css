@@ -142,6 +142,10 @@
     animation: ripple 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
   }
 
+  .animate-shimmer {
+    animation: shimmer 1.5s ease-in-out;
+  }
+
   /* Scroll indicator */
   .scroll-indicator {
     position: fixed;
@@ -225,6 +229,11 @@
 @keyframes gradMove {
   0% { background-position: 0% 50%; }
   100% { background-position: 100% 50%; }
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%) skewX(-12deg); }
+  100% { transform: translateX(400%) skewX(-12deg); }
 }
 
 /* Responsive adjustments */
