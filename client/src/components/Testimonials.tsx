@@ -12,23 +12,23 @@ export default function Testimonials() {
     {
       id: 1,
       image: testimonial1Image,
-      result: "£1800 in 4 days",
+      result: "Positive Results",
       feedback: "Fantastic! 👏",
-      description: "New member achieved amazing results following our XAUUSD signals"
+      description: "New member achieved positive outcomes following our XAUUSD educational signals"
     },
     {
       id: 2,
       image: testimonial2Image,
-      result: "$986.35 profit",
-      feedback: "A grand extra per week... From here I can only go higher 💪 Sensational!!",
-      description: "Consistent weekly profits with our premium signals"
+      result: "Successful Week",
+      feedback: "Great progress this week... From here I can only learn more 💪 Excellent!!",
+      description: "Consistent learning progress with our premium educational content"
     },
     {
       id: 3,
       image: testimonial3Image,
-      result: "$706.07 profit",
-      feedback: "Hi. I'm a newbee. This is wk3 for me",
-      description: "Even beginners are seeing success with our structured approach"
+      result: "Learning Progress",
+      feedback: "Hi. I'm a newbie. This is week 3 for me",
+      description: "Even beginners are seeing educational progress with our structured approach"
     }
   ];
 
@@ -40,10 +40,18 @@ export default function Testimonials() {
           ref={headerAnimation.ref}
           className={`text-center mb-16 animate-fade-in-up ${headerAnimation.isVisible ? 'visible' : ''}`}
         >
-          <h2 className="text-3xl md:text-5xl font-black mb-4 text-gradient">Happy Member Results</h2>
+          <h2 className="text-3xl md:text-5xl font-black mb-4 text-gradient">Member Learning Success</h2>
           <p className="text-vpfx-muted text-lg max-w-2xl mx-auto">
-            See how our members are achieving consistent profits with our premium GOLD and Forex signals
+            See how our members are progressing with our educational GOLD and Forex content
           </p>
+          
+          {/* Risk Disclaimer */}
+          <div className="bg-yellow-900/20 border border-yellow-600/30 rounded-lg p-4 mt-6 max-w-3xl mx-auto">
+            <p className="text-yellow-200 text-sm font-semibold">
+              ⚠️ IMPORTANT: Results shown are not typical and do not guarantee future success. 
+              Trading involves substantial risk of loss. Educational content only.
+            </p>
+          </div>
         </div>
 
         {/* Testimonials Grid */}
@@ -77,7 +85,7 @@ export default function Testimonials() {
                   {testimonial.result}
                 </div>
                 <div className="text-vpfx-green1 font-bold text-sm">
-                  ✅ PROFIT ACHIEVED
+                  ✅ EDUCATIONAL PROGRESS
                 </div>
               </div>
 
@@ -104,8 +112,8 @@ export default function Testimonials() {
               Ready to Join Them?
             </h3>
             <p className="text-vpfx-muted mb-6">
-              Start your journey to consistent profits with our proven GOLD and Forex signals. 
-              Join 25,000+ successful traders today.
+              Start your educational journey with our proven GOLD and Forex learning materials. 
+              Join 25,000+ members learning to trade today.
             </p>
             <a
               href="https://t.me/+tF9XarrDXqw5M2Y0"

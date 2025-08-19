@@ -33,11 +33,18 @@ export default function Hero() {
 
           {/* Subtitle */}
           <p className="text-lg md:text-xl max-w-2xl mx-auto mb-6 bg-[#00000000] text-[#ffffff] font-bold">
-            From a Team of Professional Traders{" "}
+            Educational Content From Professional Traders{" "}
             <span className="text-white font-black text-xl md:text-2xl animate-pulse-glow drop-shadow-lg">
               for FREE
             </span>
           </p>
+          
+          {/* Prominent Risk Warning */}
+          <div className="bg-red-900/20 border border-red-600/30 rounded-lg p-3 mb-6 max-w-2xl mx-auto">
+            <p className="text-red-200 text-sm font-semibold">
+              ⚠️ Trading involves substantial risk of loss. Educational content only. 18+ required.
+            </p>
+          </div>
 
           {/* Feature Chips */}
           <div className="flex flex-wrap justify-center gap-3 mb-8">
@@ -94,19 +101,19 @@ export default function Hero() {
             <StatCounter 
               target={25}
               suffix="K+"
-              label="Active Members"
+              label="Learning Members"
               delay={0.2}
             />
             <StatCounter 
               target={95.7}
               suffix="%"
-              label="Accuracy Rate"
+              label="Educational Quality"
               delay={0.4}
             />
             <StatCounter 
               target={3}
               suffix="-5"
-              label="Strong Daily Signals"
+              label="Daily Learning Posts"
               delay={0.6}
             />
           </div>
@@ -119,18 +126,18 @@ export default function Hero() {
             {[
               {
                 icon: "💎",
-                title: "Premium GOLD Signals",
-                description: "High-accuracy XAUUSD signals with precise entry and exit points for maximum profit"
+                title: "Premium GOLD Education",
+                description: "Educational XAUUSD content with analysis techniques and learning materials"
               },
               {
                 icon: "💰",
-                title: "Forex Mastery", 
-                description: "Major currency pairs analysis with clear risk management and profit targets"
+                title: "Forex Learning", 
+                description: "Major currency pairs educational analysis with risk management education"
               },
               {
                 icon: "📈",
-                title: "Daily Market Analysis",
-                description: "3-5 strong daily signals with detailed charts, levels, and strategic insights"
+                title: "Daily Market Education",
+                description: "3-5 daily educational posts with detailed charts, levels, and learning insights"
               }
             ].map((card, index) => (
               <div 
