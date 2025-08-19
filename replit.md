@@ -4,6 +4,23 @@ VictoryPipsFX is a modern web application for forex and gold (XAU) trading educa
 
 ## Recent Changes (Aug 19, 2025)
 
+### Google Ads Compliance Implementation
+- Updated website content to meet Google Ads financial services policies
+- Removed specific profit amounts from testimonials (replaced with general terms)
+- Added prominent risk warnings and "Results not typical" disclaimers
+- Changed messaging from profit-focused to education-focused throughout
+- Updated section titles: "Member Learning Success" vs profit claims
+- Modified stats to emphasize education: "Learning Members", "Educational Quality"
+- Added risk warnings prominently in hero section and testimonials
+- Maintained professional appeal while ensuring policy compliance
+
+### UI/UX Enhancements
+- Implemented scroll-based reveal animations for all sections after contact button
+- Added button hover shake effects with 7-second auto-shake intervals
+- Created new gold chart background with rising green candlesticks
+- Enhanced chart shows realistic OHLC data with XAU/USD pricing
+- Professional trading chart aesthetics with volume bars and particles
+
 ### Production Deployment Fixes
 - Enhanced server environment detection for production deployments
 - Improved static file serving with proper path resolution
