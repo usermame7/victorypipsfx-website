@@ -142,8 +142,12 @@
     animation: ripple 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
   }
 
-  .animate-shake {
-    animation: shake 0.5s ease-in-out;
+  .animate-shake-horizontal {
+    animation: shake-horizontal 0.5s ease-in-out;
+  }
+
+  .animate-shake-vertical {
+    animation: shake-vertical 0.5s ease-in-out;
   }
 
   /* Scroll indicator */
@@ -231,10 +235,16 @@
   100% { background-position: 100% 50%; }
 }
 
-@keyframes shake {
+@keyframes shake-horizontal {
   0%, 100% { transform: translateX(0); }
   10%, 30%, 50%, 70%, 90% { transform: translateX(-2px); }
   20%, 40%, 60%, 80% { transform: translateX(2px); }
+}
+
+@keyframes shake-vertical {
+  0%, 100% { transform: translateY(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateY(-2px); }
+  20%, 40%, 60%, 80% { transform: translateY(2px); }
 }
 
 /* Responsive adjustments */
