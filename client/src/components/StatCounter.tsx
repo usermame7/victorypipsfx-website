@@ -60,7 +60,7 @@ export default function StatCounter({ target, suffix = "", label, delay = 0 }: S
       <div className="text-4xl md:text-5xl font-black text-gradient mb-2">
         {count}{suffix}
       </div>
-      <div className="text-vpfx-muted text-sm font-semibold uppercase tracking-wider">
+      <div className="text-sm uppercase tracking-wider text-[#ffffff] font-bold">
         {label}
       </div>
     </div>
