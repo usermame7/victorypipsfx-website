@@ -58,10 +58,12 @@ export default function Testimonials() {
               key={testimonial.id}
               className="glass-card p-6 group hover:scale-105 transition-all duration-500 hover:shadow-glow"
               style={{ 
+                transitionProperty: 'opacity, transform',
+                transitionDuration: '0.8s',
+                transitionTimingFunction: 'ease-out',
                 transitionDelay: gridAnimation.isVisible ? `${index * 200}ms` : '0ms',
                 opacity: gridAnimation.isVisible ? 1 : 0,
-                transform: gridAnimation.isVisible ? 'translateY(0)' : 'translateY(30px)',
-                transition: 'opacity 0.8s ease-out, transform 0.8s ease-out'
+                transform: gridAnimation.isVisible ? 'translateY(0)' : 'translateY(30px)'
               }}
             >
               {/* Screenshot */}
