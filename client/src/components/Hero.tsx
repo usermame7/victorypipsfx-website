@@ -37,18 +37,7 @@ export default function Hero() {
             Learn market structure, technical analysis, and trading psychology with simple lessons at your own pace
           </h2>
           
-          {/* Educational Blurbs */}
-          <div className="max-w-4xl mx-auto mb-8 space-y-4">
-            <p className="text-vpfx-text/90 text-base md:text-lg font-medium">
-              We cover market structure, technical analysis, and risk management
-            </p>
-            <p className="text-vpfx-text/90 text-base md:text-lg font-medium">
-              Build your trading skills step by step with community support
-            </p>
-            <p className="text-vpfx-accent text-base md:text-lg font-bold">
-              No signals, no brokerage — just education
-            </p>
-          </div>
+
           
 
 
@@ -96,8 +85,9 @@ export default function Hero() {
                 href="https://t.me/m/43q_ouSRODk0"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold bg-white/10 text-white border border-white/20 transition-all duration-300 hover:bg-white/20 hover:scale-105"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-bold bg-white text-vpfx-dark border-2 border-white transition-all duration-300 hover:scale-105 animate-auto-shake hover-shake shadow-lg"
               >
+                <span className="text-lg">📧</span>
                 Contact Support
               </a>
             </div>
@@ -109,7 +99,7 @@ export default function Hero() {
             className={`grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto mb-16 animate-fade-in-up ${statsAnimation.isVisible ? 'visible' : ''}`}
           >
             <StatCounter 
-              target={500}
+              target={25000}
               suffix="+"
               label="Active Learners"
               delay={0.2}
@@ -121,11 +111,24 @@ export default function Hero() {
               delay={0.4}
             />
             <StatCounter 
-              target={5}
-              suffix=""
+              target={3}
+              suffix="-5"
               label="Daily Educational Posts"
               delay={0.6}
             />
+          </div>
+
+          {/* Educational Info Section */}
+          <div className="max-w-4xl mx-auto mb-12 space-y-4 text-center">
+            <p className="text-vpfx-text/90 text-base md:text-lg font-medium">
+              We cover market structure, technical analysis, and risk management
+            </p>
+            <p className="text-vpfx-text/90 text-base md:text-lg font-medium">
+              Build your trading skills step by step with community support
+            </p>
+            <p className="text-vpfx-accent text-base md:text-lg font-bold">
+              No signals, no brokerage — just education
+            </p>
           </div>
 
           {/* Info Cards */}
