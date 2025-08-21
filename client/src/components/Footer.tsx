@@ -7,7 +7,7 @@ export default function Footer() {
           {/* Social Proof Section */}
           <div className="bg-gradient-to-r from-vpfx-accent/10 to-cyan-500/10 border border-vpfx-accent/20 rounded-xl p-6 max-w-2xl mx-auto">
             <div className="text-vpfx-accent font-bold text-lg mb-2">
-              Join 500+ traders learning daily
+              Join 25k+ traders learning daily
             </div>
             <p className="text-vpfx-text text-sm">
               Our community grows stronger every day with dedicated learners mastering market structure, technical analysis, and trading psychology.
@@ -17,12 +17,10 @@ export default function Footer() {
                 href="https://t.me/+tF9XarrDXqw5M2Y0"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold bg-vpfx-accent text-white transition-all duration-300 hover:bg-vpfx-accent/90 hover:scale-105"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold bg-vpfx-accent text-white transition-all duration-300 hover:bg-vpfx-accent/90 hover:scale-105 animate-auto-shake hover-shake"
               >
+                <span className="text-lg">📲</span>
                 Join Our Learning Community
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
               </a>
             </div>
           </div>

@@ -87,7 +87,7 @@ export default function Hero() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-bold bg-white text-black border-2 border-white transition-all duration-300 hover:scale-105 animate-auto-shake hover-shake shadow-lg"
               >
-                <span className="text-lg">✈️</span>
+                <span className="text-lg">📲</span>
                 Contact Support
               </a>
             </div>
