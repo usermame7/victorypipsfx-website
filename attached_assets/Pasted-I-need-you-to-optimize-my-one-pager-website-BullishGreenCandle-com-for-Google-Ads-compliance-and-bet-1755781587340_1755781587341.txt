@@ -1,0 +1,76 @@
+I need you to optimize my one-pager website BullishGreenCandle.com for Google Ads compliance and better ad strength. The website’s main goal is to funnel visitors into joining our Telegram channel, but Google needs the site to look structured, educational, and trustworthy.
+
+Here’s what I want you to do:
+
+🔧 1. Page Structure & Buttons
+
+Keep the site simple, but add 3–4 top navigation buttons (all redirect to the Telegram link):
+
+“Courses” → Join Telegram
+
+“Community Access” → Join Telegram
+
+“Free Lessons” → Join Telegram
+
+“Contact Us” → Direct to DM / Telegram
+
+This makes the site look like it has multiple sections, even though all links go to Telegram.
+
+🔧 2. Headline & Text Content
+
+Add a main headline (H1):
+“Forex & Gold Education for Beginners — Community Driven”
+
+Add a sub-headline (H2):
+“Learn market structure, technical analysis, and trading psychology with simple lessons at your own pace.”
+
+Add short blurbs to match ad keywords:
+
+“We cover market structure, technical analysis, and risk management.”
+
+“Build your trading skills step by step with community support.”
+
+“No signals, no brokerage — just education.”
+
+🔧 3. Call-to-Actions
+
+Place a big button above the fold:
+“📲 Join Our Telegram Free”
+
+Every section on the page should also end with a smaller button leading to Telegram.
+
+Keep the funnel clean: every button points to Telegram, no distractions.
+
+🔧 4. Images & Visuals
+
+Add 2–3 stock education/trading style graphics (e.g., charts, learning visuals).
+
+One hero banner:
+“Forex & Gold Education – Join Our Community Today”.
+
+Keep design clean and minimal, not overcrowded.
+
+🔧 5. Trust Elements
+
+Add a footer with disclaimer text:
+“Education only. We do not provide financial advice or broker services. 18+ only.”
+
+Add a small social proof snippet:
+“Join 500+ traders learning daily.”
+
+🔧 6. SEO & Compliance Alignment
+
+Make sure the website text includes these keyword themes naturally:
+“market structure lessons, trading psychology, risk management, technical analysis, stock chart training.”
+
+This will align the site with our Google Ads keywords and improve ad strength.
+
+Goal:
+
+Keep the site looking professional and minimal, not messy.
+
+Google sees a structured education site (boosts ad approval & strength).
+
+Users see a clean funnel with multiple paths → Telegram join link.
+
+✅ Please make these updates while keeping the design simple and professional.

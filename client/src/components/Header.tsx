@@ -40,12 +40,59 @@ export default function Header() {
             <span className="text-vpfx-text font-black">VictoryPipsFX</span>
           </div>
 
-          {/* CTA Button */}
-          <TelegramButton 
-            href="https://t.me/+tF9XarrDXqw5M2Y0"
-            size="sm"
-            className="hidden sm:flex"
-          />
+          {/* Navigation Menu */}
+          <div className="hidden md:flex items-center gap-6">
+            <a 
+              href="https://t.me/+tF9XarrDXqw5M2Y0" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-vpfx-text hover:text-vpfx-accent font-semibold transition-all duration-300 hover:scale-105"
+            >
+              Courses
+            </a>
+            <a 
+              href="https://t.me/+tF9XarrDXqw5M2Y0" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-vpfx-text hover:text-vpfx-accent font-semibold transition-all duration-300 hover:scale-105"
+            >
+              Community Access
+            </a>
+            <a 
+              href="https://t.me/+tF9XarrDXqw5M2Y0" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-vpfx-text hover:text-vpfx-accent font-semibold transition-all duration-300 hover:scale-105"
+            >
+              Free Lessons
+            </a>
+            <a 
+              href="https://t.me/m/43q_ouSRODk0" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-vpfx-text hover:text-vpfx-accent font-semibold transition-all duration-300 hover:scale-105"
+            >
+              Contact Us
+            </a>
+          </div>
+
+          {/* Mobile Menu + CTA Button */}
+          <div className="flex items-center gap-3">
+            <TelegramButton 
+              href="https://t.me/+tF9XarrDXqw5M2Y0"
+              size="sm"
+              className="hidden sm:flex"
+            />
+            
+            {/* Mobile Menu Button */}
+            <div className="md:hidden">
+              <button className="text-vpfx-text hover:text-vpfx-accent">
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              </button>
+            </div>
+          </div>
         </nav>
       </div>
     </header>

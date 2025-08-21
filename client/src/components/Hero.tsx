@@ -28,26 +28,37 @@ export default function Hero() {
           </div>
 
           {/* Title */}
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-black mb-4 text-gradient tracking-tight leading-tight bg-[#e6e8edd4]">Get Powerful 
-          Forex Signals Daily</h1>
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-black mb-4 text-gradient tracking-tight leading-tight bg-[#e6e8edd4]">
+            Forex & Gold Education for Beginners — Community Driven
+          </h1>
 
           {/* Subtitle */}
-          <p className="text-lg md:text-xl max-w-2xl mx-auto mb-6 bg-[#00000000] text-[#ffffff] font-bold">
-            Educational Content From Professional Traders{" "}
-            <span className="text-white font-black text-xl md:text-2xl animate-pulse-glow drop-shadow-lg">
-              for FREE
-            </span>
-          </p>
+          <h2 className="text-lg md:text-xl max-w-3xl mx-auto mb-6 bg-[#00000000] text-[#ffffff] font-bold">
+            Learn market structure, technical analysis, and trading psychology with simple lessons at your own pace
+          </h2>
+          
+          {/* Educational Blurbs */}
+          <div className="max-w-4xl mx-auto mb-8 space-y-4">
+            <p className="text-vpfx-text/90 text-base md:text-lg font-medium">
+              We cover market structure, technical analysis, and risk management
+            </p>
+            <p className="text-vpfx-text/90 text-base md:text-lg font-medium">
+              Build your trading skills step by step with community support
+            </p>
+            <p className="text-vpfx-accent text-base md:text-lg font-bold">
+              No signals, no brokerage — just education
+            </p>
+          </div>
           
 
 
-          {/* Feature Chips */}
+          {/* Feature Chips - Educational Keywords */}
           <div className="flex flex-wrap justify-center gap-3 mb-8">
             {[
-              { icon: "📈", text: "Chart Analysis" },
-              { icon: "⚡", text: "Join & Profit Daily!" },
-              { icon: "🎯", text: "Risk & Sizing" },
-              { icon: "📚", text: "Education" }
+              { icon: "📈", text: "Market Structure Lessons" },
+              { icon: "🧠", text: "Trading Psychology" },
+              { icon: "🎯", text: "Risk Management" },
+              { icon: "📊", text: "Technical Analysis" }
             ].map((chip, index) => (
               <span 
                 key={index}
@@ -59,31 +70,35 @@ export default function Hero() {
             ))}
           </div>
 
-          {/* CTA Buttons */}
+          {/* Main CTA Button - Above the fold */}
           <div className="mb-12 space-y-4">
-            <TelegramButton 
+            <a
               href="https://t.me/+tF9XarrDXqw5M2Y0"
-              size="lg"
-            />
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 px-10 py-5 rounded-2xl font-black bg-gradient-to-r from-vpfx-accent to-cyan-400 text-white border-2 border-vpfx-accent/50 transition-all duration-300 hover:-translate-y-1 hover:scale-105 active:translate-y-0 active:scale-95 hover:shadow-glow animate-auto-shake hover-shake text-xl shadow-2xl"
+            >
+              <span className="text-2xl">📲</span>
+              <span>Join Our Telegram Free</span>
+            </a>
             
-            {/* Contact Us Button */}
-            <div>
+            {/* Secondary Buttons */}
+            <div className="flex flex-wrap justify-center gap-4 mt-6">
+              <a
+                href="https://t.me/+tF9XarrDXqw5M2Y0"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold bg-white/10 text-white border border-white/20 transition-all duration-300 hover:bg-white/20 hover:scale-105"
+              >
+                Start Learning
+              </a>
               <a
                 href="https://t.me/m/43q_ouSRODk0"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 px-8 py-4 rounded-2xl font-black bg-white text-slate-800 border-2 border-white transition-all duration-300 hover:-translate-y-1 hover:scale-105 active:translate-y-0 active:scale-95 hover:shadow-lg animate-auto-shake hover-shake text-lg"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold bg-white/10 text-white border border-white/20 transition-all duration-300 hover:bg-white/20 hover:scale-105"
               >
-                {/* Telegram Icon */}
-                <svg 
-                  className="w-6 h-6 transition-transform duration-300 hover:scale-110" 
-                  xmlns="http://www.w3.org/2000/svg" 
-                  viewBox="0 0 24 24" 
-                  fill="currentColor"
-                >
-                  <path d="M9.04 15.3l-.38 5.33c.54 0 .78-.23 1.06-.5l2.55-2.45 5.29 3.87c.97.53 1.67.25 1.94-.9l3.52-16.5h.01c.31-1.45-.52-2.02-1.45-1.67L1.1 9.46c-1.41.55-1.39 1.34-.24 1.7l5.1 1.59 11.85-7.48c.56-.34 1.06-.15.64.21L9.04 15.3z"/>
-                </svg>
-                <span>Contact Us</span>
+                Contact Support
               </a>
             </div>
           </div>
@@ -94,9 +109,9 @@ export default function Hero() {
             className={`grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto mb-16 animate-fade-in-up ${statsAnimation.isVisible ? 'visible' : ''}`}
           >
             <StatCounter 
-              target={25}
-              suffix="K+"
-              label="Learning Members"
+              target={500}
+              suffix="+"
+              label="Active Learners"
               delay={0.2}
             />
             <StatCounter 
@@ -106,9 +121,9 @@ export default function Hero() {
               delay={0.4}
             />
             <StatCounter 
-              target={3}
-              suffix="-5"
-              label="Daily Learning Posts"
+              target={5}
+              suffix=""
+              label="Daily Educational Posts"
               delay={0.6}
             />
           </div>
@@ -120,19 +135,19 @@ export default function Hero() {
           >
             {[
               {
-                icon: "💎",
-                title: "Premium GOLD Education",
-                description: "Educational XAUUSD content with analysis techniques and learning materials"
+                icon: "📊",
+                title: "Stock Chart Training",
+                description: "Learn to read charts, identify patterns, and understand market structure with detailed educational content"
               },
               {
-                icon: "💰",
-                title: "Forex Learning", 
-                description: "Major currency pairs educational analysis with risk management education"
+                icon: "🧠",
+                title: "Trading Psychology Lessons", 
+                description: "Master emotional control, risk management, and disciplined trading mindset through structured learning"
               },
               {
                 icon: "📈",
-                title: "Daily Market Education",
-                description: "3-5 daily educational posts with detailed charts, levels, and learning insights"
+                title: "Technical Analysis Education",
+                description: "Comprehensive lessons on indicators, support/resistance, and market analysis techniques"
               }
             ].map((card, index) => (
               <div 
@@ -149,6 +164,21 @@ export default function Hero() {
                 <p className="text-vpfx-muted text-sm leading-relaxed">
                   {card.description}
                 </p>
+                
+                {/* CTA Button for each section */}
+                <div className="mt-4">
+                  <a
+                    href="https://t.me/+tF9XarrDXqw5M2Y0"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-2 rounded-lg font-semibold bg-vpfx-accent/20 text-vpfx-accent border border-vpfx-accent/30 transition-all duration-300 hover:bg-vpfx-accent hover:text-white hover:scale-105 text-sm"
+                  >
+                    Start Learning
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </a>
+                </div>
               </div>
             ))}
           </div>
