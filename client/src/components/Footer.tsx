@@ -19,7 +19,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold bg-vpfx-accent text-white transition-all duration-300 hover:bg-vpfx-accent/90 hover:scale-105 animate-auto-shake hover-shake"
               >
-                <span className="text-lg">📲</span>
+                <span className="text-lg">✈️</span>
                 Join Our Learning Community
               </a>
             </div>

@@ -67,7 +67,7 @@ export default function Hero() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 px-10 py-5 rounded-2xl font-black bg-gradient-to-r from-vpfx-accent to-cyan-400 text-white border-2 border-vpfx-accent/50 transition-all duration-300 hover:-translate-y-1 hover:scale-105 active:translate-y-0 active:scale-95 hover:shadow-glow animate-auto-shake hover-shake text-xl shadow-2xl"
             >
-              <span className="text-2xl">📲</span>
+              <span className="text-2xl">✈️</span>
               <span>Join Our Telegram Free</span>
             </a>
             
@@ -87,7 +87,7 @@ export default function Hero() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-bold bg-white text-black border-2 border-white transition-all duration-300 hover:scale-105 animate-auto-shake hover-shake shadow-lg"
               >
-                <span className="text-lg">📲</span>
+                <span className="text-lg">✈️</span>
                 Contact Support
               </a>
             </div>
