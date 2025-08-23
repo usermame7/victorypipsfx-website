@@ -14,21 +14,21 @@ export default function Testimonials() {
       image: testimonial1Image,
       result: "Verified Trade Results",
       feedback: "Fantastic! 👏",
-      description: "Real trading results from our 97% accurate forex signals - transparently verified"
+      description: "Real results from our **97% accurate** gold & forex signals"
     },
     {
       id: 2,
       image: testimonial2Image,
       result: "Weekly Profit Confirmed",
       feedback: "Great progress this week... From here I can only learn more 💪 Excellent!!",
-      description: "Consistent profitable results with our professional forex signals and gold alerts"
+      description: "Consistent results with professional gold & forex signals"
     },
     {
       id: 3,
       image: testimonial3Image,
       result: "Beginner Success Story",
       feedback: "Hi. I'm a newbie. This is week 3 for me",
-      description: "Even beginners are seeing profitable results with our accurate forex signals in just 3 weeks"
+      description: "Beginners getting results with **97% accurate** signals"
     }
   ];
 
@@ -42,7 +42,7 @@ export default function Testimonials() {
         >
           <h2 className="text-3xl md:text-5xl font-black mb-4 text-gradient">Transparent Results You Can Trust</h2>
           <p className="text-vpfx-muted text-lg max-w-2xl mx-auto">
-            We publish results daily – no fake promises, just verified trades from our professional forex signals
+            Daily verified results from our **Gold & Forex Signals Provider** with **97% accuracy**
           </p>
           
 

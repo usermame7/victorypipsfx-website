@@ -28,10 +28,10 @@ export default function Hero() {
           </div>
 
           {/* Title */}
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-black mb-4 text-gradient tracking-tight leading-tight bg-[#e6e8edd4]">Accurate FX Signals With 97% Success Rate</h1>
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-black mb-4 text-gradient tracking-tight leading-tight bg-[#e6e8edd4]">Gold & Forex Signals Provider</h1>
 
           {/* Subtitle */}
-          <h2 className="text-lg md:text-xl max-w-3xl mx-auto mb-6 bg-[#00000000] text-[#ffffff] font-bold">Join thousands of traders worldwide receiving daily Forex and Gold signals from a team of professional traders.</h2>
+          <h2 className="text-lg md:text-xl max-w-3xl mx-auto mb-6 bg-[#00000000] text-[#ffffff] font-bold">**97% Success Rate** • Professional Trading Team • Daily Accurate Signals</h2>
           
 
           
@@ -40,7 +40,7 @@ export default function Hero() {
           {/* Feature Chips - Forex Signals Keywords */}
           <div className="flex flex-wrap justify-center gap-3 mb-8">
             {[
-              { icon: "📈", text: "Forex Signals" },
+              { icon: "📈", text: "Chart Analysis" },
               { icon: "🎯", text: "97% Accuracy" },
               { icon: "👥", text: "Professional Team" },
               { icon: "⚡", text: "Daily Signals" }
@@ -109,10 +109,10 @@ export default function Hero() {
             />
           </div>
 
-          {/* Forex Signals Info Section */}
+          {/* Gold & Forex Signals Info Section */}
           <div className="max-w-4xl mx-auto mb-12 space-y-4 text-center">
             <p className="text-vpfx-accent text-base md:text-lg font-bold">
-              97% accuracy • Professional traders • Free signals
+              **Gold & Forex Signals Provider** • **97% Accuracy** • Free Access
             </p>
           </div>
 

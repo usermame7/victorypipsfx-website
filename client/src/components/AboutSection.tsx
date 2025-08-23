@@ -16,25 +16,25 @@ export default function AboutSection() {
           
           <div className="glass-card p-8 md:p-12">
             <p className="text-vpfx-text text-lg md:text-xl leading-relaxed mb-8">
-              <span className="text-vpfx-accent font-bold">VictoryPipsFX</span> is powered by a team of professional traders with decades of combined experience in Forex and commodities markets. Our signals are based on in-depth technical and fundamental analysis, ensuring precision and consistency.
+              <span className="text-vpfx-accent font-bold">VictoryPipsFX</span> is a **Gold & Forex Signals Provider** with professional traders delivering **97% accuracy** through technical analysis.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
               {[
                 {
                   icon: "📊",
-                  title: "Technical Analysis Experts",
-                  description: "Advanced chart analysis and pattern recognition"
+                  title: "Chart Analysis Experts",
+                  description: "Professional technical analysis"
                 },
                 {
                   icon: "🌍", 
-                  title: "Global Market Coverage",
-                  description: "Forex pairs and gold signals worldwide"
+                  title: "Gold & Forex Signals",
+                  description: "Daily accurate signals worldwide"
                 },
                 {
                   icon: "🎯",
-                  title: "Proven Track Record", 
-                  description: "97% accuracy rate with transparent results"
+                  title: "**97% Accuracy**", 
+                  description: "Proven track record with transparent results"
                 }
               ].map((item, index) => (
                 <div key={index} className="text-center">
@@ -47,7 +47,7 @@ export default function AboutSection() {
 
             <div className="text-center">
               <p className="text-vpfx-text/80 text-base mb-6">
-                Join thousands of traders who trust our professional team for accurate forex signals and consistent trading results.
+                Join 25k+ traders trusting our **Gold & Forex Signals Provider** for **97% accuracy**.
               </p>
               
               <a

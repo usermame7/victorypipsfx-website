@@ -16,7 +16,7 @@ export default function Pricing() {
           
           <div className="max-w-4xl mx-auto glass-card p-8 md:p-12">
             <p className="text-vpfx-text text-lg md:text-xl leading-relaxed mb-8">
-              Unlike others charging $100+ per month, <span className="text-vpfx-accent font-bold">VictoryPipsFX gives you 100% free access</span> to our VIP signals channel. Our mission is to help traders succeed, not drain their wallets.
+              **Gold & Forex Signals Provider** offering <span className="text-vpfx-accent font-bold">100% free access</span> with **97% accuracy**. No monthly fees.
             </p>
             
             <div className="text-center space-y-6">
@@ -26,12 +26,12 @@ export default function Pricing() {
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-left max-w-2xl mx-auto">
                 {[
-                  "Daily forex signals with 97% accuracy",
-                  "Real-time gold signals and alerts", 
-                  "Professional entry and exit levels",
-                  "Risk management guidance",
-                  "VIP Telegram channel access",
-                  "Professional trading team support"
+                  "**97% accuracy** gold & forex signals",
+                  "Real-time Telegram alerts", 
+                  "Professional entry/exit levels",
+                  "Risk management included",
+                  "Free VIP channel access",
+                  "Professional team support"
                 ].map((feature, index) => (
                   <div key={index} className="flex items-center gap-3">
                     <span className="text-vpfx-accent text-lg">✅</span>

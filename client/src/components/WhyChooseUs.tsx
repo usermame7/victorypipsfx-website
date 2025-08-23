@@ -14,7 +14,7 @@ export default function WhyChooseUs() {
             Why Traders Trust VictoryPipsFX
           </h2>
           <p className="text-vpfx-text/80 text-lg max-w-2xl mx-auto">
-            Professional forex signals with proven results from our expert trading team
+            **Gold & Forex Signals Provider** with **97% accuracy**
           </p>
         </div>
 
@@ -23,17 +23,17 @@ export default function WhyChooseUs() {
             {
               icon: "🎯",
               title: "97% Accuracy",
-              description: "Proven signals verified across hundreds of trades with transparent tracking and real results."
+              description: "Proven gold & forex signals with verified results."
             },
             {
               icon: "👨‍💼",
-              title: "Professional Analysts",
-              description: "A team of expert traders providing daily setups with decades of combined market experience."
+              title: "Professional Team",
+              description: "Expert traders delivering daily accurate signals."
             },
             {
               icon: "⚡",
-              title: "Fast Delivery",
-              description: "Real-time alerts direct to your Telegram with instant notifications for all forex signals."
+              title: "Daily Signals",
+              description: "Real-time gold & forex alerts direct to Telegram."
             }
           ].map((item, index) => (
             <div 

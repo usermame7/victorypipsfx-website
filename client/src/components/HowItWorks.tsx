@@ -14,7 +14,7 @@ export default function HowItWorks() {
             Simple. Fast. Effective.
           </h2>
           <p className="text-vpfx-text/80 text-lg max-w-2xl mx-auto">
-            Start receiving professional forex signals in just 4 easy steps
+            **Gold & Forex Signals Provider** - Get started in 4 steps
           </p>
         </div>
 
@@ -22,27 +22,27 @@ export default function HowItWorks() {
           {[
             {
               step: "1",
-              icon: "✈️",
-              title: "Join our Telegram",
-              description: "Click the link and join our free VIP forex signals channel"
+              icon: "📱",
+              title: "Join Telegram",
+              description: "Join our free gold & forex signals channel"
             },
             {
               step: "2", 
               icon: "📱",
-              title: "Receive Free Daily Signals",
-              description: "Get real-time forex and gold signals delivered instantly to your phone"
+              title: "Receive Daily Signals",
+              description: "Real-time gold & forex signals delivered instantly"
             },
             {
               step: "3",
               icon: "💰",
-              title: "Copy the Trade in Your Broker", 
-              description: "Follow our professional signals with precise entry, stop loss, and take profit levels"
+              title: "Copy Trade Setup", 
+              description: "Follow signals with precise entry and exit levels"
             },
             {
               step: "4",
               icon: "🎯",
-              title: "Profit with Confidence",
-              description: "Enjoy consistent results with our 97% accuracy rate and professional trading team"
+              title: "Profit with **97% Accuracy**",
+              description: "Consistent results from professional trading team"
             }
           ].map((item, index) => (
             <div 
