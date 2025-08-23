@@ -50,7 +50,7 @@ export default function Pricing() {
                 className="inline-flex items-center gap-3 px-10 py-5 rounded-2xl font-black bg-gradient-to-r from-vpfx-accent to-cyan-400 text-white border-2 border-vpfx-accent/50 transition-all duration-300 hover:-translate-y-1 hover:scale-105 hover:shadow-glow animate-auto-shake hover-shake text-xl shadow-2xl"
               >
                 <span className="text-2xl">✈️</span>
-                <span>Join Free Telegram Channel</span>
+                <span>Join Free Telegram Channel ✈️</span>
               </a>
               <a
                 href="https://t.me/m/43q_ouSRODk0"
@@ -59,7 +59,7 @@ export default function Pricing() {
                 className="inline-flex items-center gap-3 px-10 py-5 rounded-2xl font-black bg-white text-black border-2 border-white transition-all duration-300 hover:scale-105 animate-auto-shake hover-shake shadow-2xl text-xl"
               >
                 <span className="text-2xl">✈️</span>
-                <span>Contact Us</span>
+                <span>Contact Us ✈️</span>
               </a>
             </div>
           </div>

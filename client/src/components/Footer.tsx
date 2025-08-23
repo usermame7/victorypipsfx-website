@@ -20,7 +20,7 @@ export default function Footer() {
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold bg-vpfx-accent text-white transition-all duration-300 hover:bg-vpfx-accent/90 hover:scale-105 animate-auto-shake hover-shake"
               >
                 <span className="text-lg">✈️</span>
-                Telegram Channel
+                Telegram Channel ✈️
               </a>
               <a
                 href="https://t.me/m/43q_ouSRODk0"
@@ -29,7 +29,7 @@ export default function Footer() {
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold bg-white text-black transition-all duration-300 hover:scale-105 animate-auto-shake hover-shake"
               >
                 <span className="text-lg">✈️</span>
-                Contact Us
+                Contact Us ✈️
               </a>
             </div>
           </div>

@@ -57,7 +57,7 @@ export default function AboutSection() {
                 className="inline-flex items-center gap-3 px-8 py-4 rounded-xl font-bold bg-vpfx-accent/20 text-vpfx-accent border border-vpfx-accent/30 transition-all duration-300 hover:bg-vpfx-accent hover:text-white hover:scale-105 animate-auto-shake hover-shake"
               >
                 <span className="text-lg">✈️</span>
-                <span>Meet Our Professional Team</span>
+                <span>Meet Our Professional Team ✈️</span>
               </a>
             </div>
           </div>

@@ -60,7 +60,7 @@ export default function WhyChooseUs() {
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold bg-vpfx-accent/20 text-vpfx-accent border border-vpfx-accent/30 transition-all duration-300 hover:bg-vpfx-accent hover:text-white hover:scale-105 animate-auto-shake hover-shake"
                 >
                   <span className="text-sm">✈️</span>
-                  Join Free Channel
+                  Join Free Channel ✈️
                 </a>
               </div>
             </div>

@@ -82,7 +82,7 @@ export default function HowItWorks() {
             className="inline-flex items-center gap-3 px-10 py-5 rounded-2xl font-black bg-gradient-to-r from-vpfx-accent to-cyan-400 text-white border-2 border-vpfx-accent/50 transition-all duration-300 hover:-translate-y-1 hover:scale-105 hover:shadow-glow animate-auto-shake hover-shake text-xl shadow-2xl"
           >
             <span className="text-2xl">✈️</span>
-            <span>Start Getting Free Forex Signals Now</span>
+            <span>Start Getting Free Forex Signals Now ✈️</span>
           </a>
         </div>
       </div>
