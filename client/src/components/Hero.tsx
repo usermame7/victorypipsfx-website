@@ -29,25 +29,25 @@ export default function Hero() {
 
           {/* Title */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-black mb-4 text-gradient tracking-tight leading-tight bg-[#e6e8edd4]">
-            Forex & Gold Education for Beginners — Community Driven
+            VictoryPipsFX – Accurate Forex Signals With 97% Success Rate
           </h1>
 
           {/* Subtitle */}
           <h2 className="text-lg md:text-xl max-w-3xl mx-auto mb-6 bg-[#00000000] text-[#ffffff] font-bold">
-            Learn market structure, technical analysis, and trading psychology with simple lessons at your own pace
+            Join thousands of traders worldwide receiving daily Forex and Gold signals from our team of professional traders.
           </h2>
           
 
           
 
 
-          {/* Feature Chips - Educational Keywords */}
+          {/* Feature Chips - Forex Signals Keywords */}
           <div className="flex flex-wrap justify-center gap-3 mb-8">
             {[
-              { icon: "📈", text: "Market Structure Lessons" },
-              { icon: "🧠", text: "Trading Psychology" },
-              { icon: "🎯", text: "Risk Management" },
-              { icon: "📊", text: "Technical Analysis" }
+              { icon: "📈", text: "Forex Signals" },
+              { icon: "🎯", text: "97% Accuracy" },
+              { icon: "👥", text: "Professional Team" },
+              { icon: "⚡", text: "Daily Signals" }
             ].map((chip, index) => (
               <span 
                 key={index}
@@ -59,36 +59,26 @@ export default function Hero() {
             ))}
           </div>
 
-          {/* Main CTA Button - Above the fold */}
+          {/* Main CTA Buttons - Side by side */}
           <div className="mb-12 space-y-4">
-            <a
-              href="https://t.me/+tF9XarrDXqw5M2Y0"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 px-10 py-5 rounded-2xl font-black bg-gradient-to-r from-vpfx-accent to-cyan-400 text-white border-2 border-vpfx-accent/50 transition-all duration-300 hover:-translate-y-1 hover:scale-105 active:translate-y-0 active:scale-95 hover:shadow-glow animate-auto-shake hover-shake text-xl shadow-2xl"
-            >
-              <span className="text-2xl">✈️</span>
-              <span>Join Our Telegram Free</span>
-            </a>
-            
-            {/* Secondary Buttons */}
-            <div className="flex flex-wrap justify-center gap-4 mt-6">
+            <div className="flex flex-wrap justify-center gap-4">
               <a
                 href="https://t.me/+tF9XarrDXqw5M2Y0"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold bg-white/10 text-white border border-white/20 transition-all duration-300 hover:bg-white/20 hover:scale-105"
+                className="inline-flex items-center gap-3 px-10 py-5 rounded-2xl font-black bg-gradient-to-r from-vpfx-accent to-cyan-400 text-white border-2 border-vpfx-accent/50 transition-all duration-300 hover:-translate-y-1 hover:scale-105 active:translate-y-0 active:scale-95 hover:shadow-glow animate-auto-shake hover-shake text-xl shadow-2xl"
               >
-                Start Learning
+                <span className="text-2xl">✈️</span>
+                <span>Join Free Telegram Channel</span>
               </a>
               <a
                 href="https://t.me/m/43q_ouSRODk0"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-bold bg-white text-black border-2 border-white transition-all duration-300 hover:scale-105 animate-auto-shake hover-shake shadow-lg"
+                className="inline-flex items-center gap-3 px-10 py-5 rounded-2xl font-black bg-white text-black border-2 border-white transition-all duration-300 hover:scale-105 animate-auto-shake hover-shake shadow-2xl text-xl"
               >
-                <span className="text-lg">✈️</span>
-                Contact Support
+                <span className="text-2xl">✈️</span>
+                <span>Contact Us</span>
               </a>
             </div>
           </div>
@@ -99,35 +89,35 @@ export default function Hero() {
             className={`grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto mb-16 animate-fade-in-up ${statsAnimation.isVisible ? 'visible' : ''}`}
           >
             <StatCounter 
-              target={25000}
-              suffix="+"
-              label="Active Learners"
+              target={97}
+              suffix="%"
+              label="Signal Accuracy"
               delay={0.2}
             />
             <StatCounter 
-              target={95.7}
-              suffix="%"
-              label="Educational Quality"
+              target={5000}
+              suffix="+"
+              label="Active Traders"
               delay={0.4}
             />
             <StatCounter 
-              target={3}
-              suffix="-5"
-              label="Daily Educational Posts"
+              target={10}
+              suffix="+"
+              label="Daily Forex Signals"
               delay={0.6}
             />
           </div>
 
-          {/* Educational Info Section */}
+          {/* Forex Signals Info Section */}
           <div className="max-w-4xl mx-auto mb-12 space-y-4 text-center">
             <p className="text-vpfx-text/90 text-base md:text-lg font-medium">
-              We cover market structure, technical analysis, and risk management
+              Our professional team delivers accurate forex signals with proven results
             </p>
             <p className="text-vpfx-text/90 text-base md:text-lg font-medium">
-              Build your trading skills step by step with community support
+              Join thousands of successful traders receiving daily VIP forex signals
             </p>
             <p className="text-vpfx-accent text-base md:text-lg font-bold">
-              No signals, no brokerage — just education
+              Free forex signals — 97% accuracy — professional traders
             </p>
           </div>
 
@@ -138,19 +128,19 @@ export default function Hero() {
           >
             {[
               {
-                icon: "📊",
-                title: "Stock Chart Training",
-                description: "Learn to read charts, identify patterns, and understand market structure with detailed educational content"
+                icon: "🎯",
+                title: "97% Accuracy",
+                description: "Proven signals verified across hundreds of trades with transparent results from our professional team"
               },
               {
-                icon: "🧠",
-                title: "Trading Psychology Lessons", 
-                description: "Master emotional control, risk management, and disciplined trading mindset through structured learning"
+                icon: "👥",
+                title: "Professional Analysts", 
+                description: "A team of expert traders providing daily setups with decades of combined forex market experience"
               },
               {
-                icon: "📈",
-                title: "Technical Analysis Education",
-                description: "Comprehensive lessons on indicators, support/resistance, and market analysis techniques"
+                icon: "⚡",
+                title: "Fast Delivery",
+                description: "Real-time alerts direct to your Telegram with instant notifications for all forex and gold signals"
               }
             ].map((card, index) => (
               <div 
@@ -174,9 +164,10 @@ export default function Hero() {
                     href="https://t.me/+tF9XarrDXqw5M2Y0"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-4 py-2 rounded-lg font-semibold bg-vpfx-accent/20 text-vpfx-accent border border-vpfx-accent/30 transition-all duration-300 hover:bg-vpfx-accent hover:text-white hover:scale-105 text-sm"
+                    className="inline-flex items-center gap-2 px-4 py-2 rounded-lg font-semibold bg-vpfx-accent/20 text-vpfx-accent border border-vpfx-accent/30 transition-all duration-300 hover:bg-vpfx-accent hover:text-white hover:scale-105 text-sm animate-auto-shake hover-shake"
                   >
-                    Start Learning
+                    <span className="text-sm">✈️</span>
+                    Get Free Signals
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>

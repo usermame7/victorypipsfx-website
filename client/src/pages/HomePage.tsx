@@ -1,7 +1,11 @@
 import { useEffect } from "react";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import WhyChooseUs from "@/components/WhyChooseUs";
 import Testimonials from "@/components/Testimonials";
+import HowItWorks from "@/components/HowItWorks";
+import Pricing from "@/components/Pricing";
+import AboutSection from "@/components/AboutSection";
 import ChartBackground from "@/components/ChartBackground";
 import Footer from "@/components/Footer";
 
@@ -44,7 +48,11 @@ export default function HomePage() {
       {/* Content */}
       <Header />
       <Hero />
+      <WhyChooseUs />
       <Testimonials />
+      <HowItWorks />
+      <Pricing />
+      <AboutSection />
       <Footer />
     </div>
   );

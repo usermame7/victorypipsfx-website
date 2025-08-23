@@ -1,0 +1,96 @@
+Redesign www.bullishgreencandle.com
+ into a forex signals provider website branded as VictoryPipsFX. Use a clean, modern layout. Dark background + green/white accents. Add multiple mentions of “Forex Signals,” “97% Accuracy,” and “Professional Team.” Replace all current content with the following structure and copy:
+
+1. Hero Section (Top of Page)
+
+Large bold headline:
+“VictoryPipsFX – Accurate Forex Signals With 97% Success Rate”
+
+Sub-headline:
+“Join thousands of traders worldwide receiving daily Forex and Gold signals from our team of professional traders.”
+
+Buttons (side by side, both with Telegram logo):
+
+Join Free Telegram Channel → link to our Telegram
+
+Contact Us → link to Telegram contact
+
+Background: abstract trading/finance theme, gradient with candlestick silhouettes.
+
+2. Why Choose Us Section
+
+Headline: “Why Traders Trust VictoryPipsFX”
+
+Three columns with icons:
+
+97% Accuracy → “Proven signals verified across hundreds of trades.”
+
+Professional Analysts → “A team of expert traders providing daily setups.”
+
+Fast Delivery → “Real-time alerts direct to your Telegram.”
+
+3. Live Results Section
+
+Headline: “Transparent Results You Can Trust”
+(use some of our photos testimonials here ) 
+
+Sub-text: “We publish results daily – no fake promises, just verified trades.”
+
+4. How It Works Section
+
+Headline: “Simple. Fast. Effective.”
+
+Step icons with short text:
+
+Step 1: Join our Telegram
+
+Step 2: Receive Free Daily Signals
+
+Step 3: Copy the Trade in Your Broker
+
+Step 4: Profit with Confidence
+
+5. Pricing / Access Section
+
+Headline: “Free VIP Access”
+
+Text:
+“Unlike others charging $100+ per month, VictoryPipsFX gives you 100% free access to our VIP signals channel. Our mission is to help traders succeed, not drain their wallets.”
+
+Buttons (repeat from Hero section):
+
+Join Free Telegram Channel (Telegram logo)
+
+Contact Us (Telegram logo)
+
+6. About Section
+
+Headline: “Who We Are”
+
+Text:
+“VictoryPipsFX is powered by a team of professional traders with decades of combined experience in Forex and commodities markets. Our signals are based on in-depth technical and fundamental analysis, ensuring precision and consistency.”
+
+7. Disclaimer Section (Footer)
+
+Text:
+“Trading Forex and financial markets involves risk. VictoryPipsFX does not provide financial advice. Signals are for educational purposes only. Past performance is not indicative of future results.”
+
+Footer links:
+
+Telegram Channel
+
+Contact Us
+
+🔑 Notes for the AI Builder
+
+Replace all branding with VictoryPipsFX, but the domain remains BullishGreenCandle.com.
+
+Add multiple keyword mentions of: forex signals, daily signals, free forex signals, VIP forex signals, accurate forex signals, gold signals, professional traders, 97% accuracy.
+
+Use a single-page funnel design optimized for conversions (hero → trust → results → how it works → join).
+
+Ensure buttons are sticky on mobile (Join Telegram + Contact Us).
+
+All buttons must include the Telegram logo.
+
+Keep the automatic and hover shakings on the buttons with attached linkes into them

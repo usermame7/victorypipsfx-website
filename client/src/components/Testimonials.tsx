@@ -12,23 +12,23 @@ export default function Testimonials() {
     {
       id: 1,
       image: testimonial1Image,
-      result: "Positive Results",
+      result: "Verified Trade Results",
       feedback: "Fantastic! 👏",
-      description: "New member achieved positive outcomes following our XAUUSD educational signals"
+      description: "Real trading results from our 97% accurate forex signals - transparently verified"
     },
     {
       id: 2,
       image: testimonial2Image,
-      result: "Successful Week",
+      result: "Weekly Profit Confirmed",
       feedback: "Great progress this week... From here I can only learn more 💪 Excellent!!",
-      description: "Consistent learning progress with our premium educational content"
+      description: "Consistent profitable results with our professional forex signals and gold alerts"
     },
     {
       id: 3,
       image: testimonial3Image,
-      result: "Learning Progress",
+      result: "Beginner Success Story",
       feedback: "Hi. I'm a newbie. This is week 3 for me",
-      description: "Even beginners are seeing educational progress with our structured approach"
+      description: "Even beginners are seeing profitable results with our accurate forex signals in just 3 weeks"
     }
   ];
 
@@ -40,9 +40,9 @@ export default function Testimonials() {
           ref={headerAnimation.ref}
           className={`text-center mb-16 animate-fade-in-up ${headerAnimation.isVisible ? 'visible' : ''}`}
         >
-          <h2 className="text-3xl md:text-5xl font-black mb-4 text-gradient">Member Learning Success</h2>
+          <h2 className="text-3xl md:text-5xl font-black mb-4 text-gradient">Transparent Results You Can Trust</h2>
           <p className="text-vpfx-muted text-lg max-w-2xl mx-auto">
-            See how our members are progressing with our educational GOLD and Forex content
+            We publish results daily – no fake promises, just verified trades from our professional forex signals
           </p>
           
 
@@ -81,7 +81,7 @@ export default function Testimonials() {
                   {testimonial.result}
                 </div>
                 <div className="text-vpfx-green1 font-bold text-sm">
-                  ✅ EDUCATIONAL PROGRESS
+                  ✅ VERIFIED FOREX SIGNAL RESULT
                 </div>
               </div>
 
@@ -105,11 +105,11 @@ export default function Testimonials() {
         >
           <div className="glass-card p-8 max-w-2xl mx-auto">
             <h3 className="text-2xl font-black mb-4 text-vpfx-accent">
-              Ready to Join Them?
+              Ready to Get These Results?
             </h3>
             <p className="text-vpfx-muted mb-6">
-              Start your educational journey with our proven GOLD and Forex learning materials. 
-              Join 25,000+ members learning to trade today.
+              Start receiving our professional forex signals with 97% accuracy. 
+              Join 5,000+ traders getting profitable results daily.
             </p>
             <a
               href="https://t.me/+tF9XarrDXqw5M2Y0"
@@ -120,7 +120,7 @@ export default function Testimonials() {
               <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M9.04 15.3l-.38 5.33c.54 0 .78-.23 1.06-.5l2.55-2.45 5.29 3.87c.97.53 1.67.25 1.94-.9l3.52-16.5h.01c.31-1.45-.52-2.02-1.45-1.67L1.1 9.46c-1.41.55-1.39 1.34-.24 1.7l5.1 1.59 11.85-7.48c.56-.34 1.06-.15.64.21L9.04 15.3z"/>
               </svg>
-              Get Started Free
+              Get Free Forex Signals
             </a>
           </div>
         </div>
