@@ -12,21 +12,21 @@ export default function Testimonials() {
     {
       id: 1,
       image: testimonial1Image,
-      result: "EUR/USD BUY → +50 pips ✅",
+      result: "Verified Trade Results",
       feedback: "Fantastic! 👏",
       description: "Real trading results from our 97% accurate forex signals - transparently verified"
     },
     {
       id: 2,
       image: testimonial2Image,
-      result: "XAU/USD SELL → +100 pips ✅",
+      result: "Weekly Profit Confirmed",
       feedback: "Great progress this week... From here I can only learn more 💪 Excellent!!",
       description: "Consistent profitable results with our professional forex signals and gold alerts"
     },
     {
       id: 3,
       image: testimonial3Image,
-      result: "GBP/USD BUY → +60 pips ✅",
+      result: "Beginner Success Story",
       feedback: "Hi. I'm a newbie. This is week 3 for me",
       description: "Even beginners are seeing profitable results with our accurate forex signals in just 3 weeks"
     }
@@ -95,10 +95,6 @@ export default function Testimonials() {
                 {testimonial.description}
               </p>
               
-              {/* Verification */}
-              <p className="text-vpfx-accent text-xs font-bold mt-2">
-                All results independently verified.
-              </p>
             </div>
           ))}
         </div>
@@ -114,7 +110,7 @@ export default function Testimonials() {
             </h3>
             <p className="text-vpfx-muted mb-6">
               Start receiving our professional forex signals with 97% accuracy. 
-              Join 5,000+ traders getting profitable results daily.
+              Join 25,000+ traders getting profitable results daily.
             </p>
             <a
               href="https://t.me/+tF9XarrDXqw5M2Y0"
@@ -125,7 +121,7 @@ export default function Testimonials() {
               <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M9.04 15.3l-.38 5.33c.54 0 .78-.23 1.06-.5l2.55-2.45 5.29 3.87c.97.53 1.67.25 1.94-.9l3.52-16.5h.01c.31-1.45-.52-2.02-1.45-1.67L1.1 9.46c-1.41.55-1.39 1.34-.24 1.7l5.1 1.59 11.85-7.48c.56-.34 1.06-.15.64.21L9.04 15.3z"/>
               </svg>
-              Get Free Forex Signals ✈️
+              Get Free Forex Signals
             </a>
           </div>
         </div>

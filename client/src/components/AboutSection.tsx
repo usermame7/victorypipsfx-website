@@ -56,8 +56,10 @@ export default function AboutSection() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 px-8 py-4 rounded-xl font-bold bg-vpfx-accent/20 text-vpfx-accent border border-vpfx-accent/30 transition-all duration-300 hover:bg-vpfx-accent hover:text-white hover:scale-105 animate-auto-shake hover-shake"
               >
-                <span className="text-lg">✈️</span>
-                <span>Meet Our Professional Team ✈️</span>
+                <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M9.04 15.3l-.38 5.33c.54 0 .78-.23 1.06-.5l2.55-2.45 5.29 3.87c.97.53 1.67.25 1.94-.9l3.52-16.5h.01c.31-1.45-.52-2.02-1.45-1.67L1.1 9.46c-1.41.55-1.39 1.34-.24 1.7l5.1 1.59 11.85-7.48c.56-.34 1.06-.15.64.21L9.04 15.3z"/>
+                </svg>
+                <span>Meet Our Professional Team</span>
               </a>
             </div>
           </div>
