@@ -28,7 +28,7 @@ export default function Hero() {
           </div>
 
           {/* Title */}
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-black mb-4 text-gradient tracking-tight leading-tight bg-[#e6e8edd4]">Gold & Forex Signals Provider</h1>
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-black mb-4 text-gradient tracking-tight leading-tight bg-[#e6e8edd4]">Free Gold and Forex Signals</h1>
 
           {/* Subtitle */}
           <h2 className="text-lg md:text-xl max-w-3xl mx-auto mb-6 bg-[#00000000] text-[#ffffff] font-bold">97% Success Rate • Professional Trading Team • Daily Accurate Signals</h2>
@@ -112,7 +112,7 @@ export default function Hero() {
           {/* Gold & Forex Signals Info Section */}
           <div className="max-w-4xl mx-auto mb-12 space-y-4 text-center">
             <p className="text-vpfx-accent text-base md:text-lg font-bold">
-              Gold & Forex Signals Provider • 97% Accuracy • Free Access
+              Free Gold and Forex Signals • 97% Accuracy • Professional Team
             </p>
           </div>
 

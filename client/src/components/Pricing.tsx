@@ -14,9 +14,9 @@ export default function Pricing() {
             Free VIP Access
           </h2>
           
-          <div className="max-w-4xl mx-auto glass-card p-8 md:p-12">
+          <div className={`max-w-4xl mx-auto glass-card p-8 md:p-12 animate-scale-in ${animation.isVisible ? 'visible' : ''}`}>
             <p className="text-vpfx-text text-lg md:text-xl leading-relaxed mb-8">
-              Gold & Forex Signals Provider offering <span className="text-vpfx-accent font-bold">100% free access</span> • 97% accuracy • No monthly fees.
+              Free Gold and Forex Signals offering <span className="text-vpfx-accent font-bold">100% free access</span> • 97% accuracy • No monthly fees.
             </p>
             
             <div className="text-center space-y-6">

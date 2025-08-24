@@ -14,9 +14,9 @@ export default function AboutSection() {
             Who We Are
           </h2>
           
-          <div className="glass-card p-8 md:p-12">
+          <div className={`glass-card p-8 md:p-12 animate-fade-in-up ${animation.isVisible ? 'visible' : ''}`}>
             <p className="text-vpfx-text text-lg md:text-xl leading-relaxed mb-8">
-              <span className="text-vpfx-accent font-bold">VictoryPipsFX</span> is a Gold & Forex Signals Provider • Professional traders • 97% accuracy through technical analysis.
+              <span className="text-vpfx-accent font-bold">VictoryPipsFX</span> provides Free Gold and Forex Signals • Professional traders • 97% accuracy through technical analysis.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
@@ -28,26 +28,29 @@ export default function AboutSection() {
                 },
                 {
                   icon: "🌍", 
-                  title: "Gold & Forex Signals",
+                  title: "Free Gold and Forex Signals",
                   description: "Daily accurate signals worldwide"
                 },
                 {
                   icon: "🎯",
-                  title: "**97% Accuracy**", 
+                  title: "97% Accuracy", 
                   description: "Proven track record with transparent results"
                 }
-              ].map((item, index) => (
-                <div key={index} className="text-center">
+              ].map((item, index) => {
+                const animClasses = ['animate-fade-in-left', 'animate-scale-in', 'animate-fade-in-right'];
+                return (
+                <div key={index} className={`text-center ${animClasses[index]} ${animation.isVisible ? 'visible' : ''} animate-stagger-${index + 1}`}>
                   <div className="text-3xl mb-3">{item.icon}</div>
                   <h3 className="text-vpfx-accent font-bold text-lg mb-2">{item.title}</h3>
                   <p className="text-vpfx-muted text-sm">{item.description}</p>
                 </div>
-              ))}
+              )})
+              }
             </div>
 
             <div className="text-center">
               <p className="text-vpfx-text/80 text-base mb-6">
-                Join 25k+ traders trusting our Gold & Forex Signals Provider • 97% accuracy.
+                Join 25k+ traders trusting our Free Gold and Forex Signals • 97% accuracy.
               </p>
               
               <a

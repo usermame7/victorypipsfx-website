@@ -14,7 +14,7 @@ export default function HowItWorks() {
             Simple. Fast. Effective.
           </h2>
           <p className="text-vpfx-text/80 text-lg max-w-2xl mx-auto">
-            Gold & Forex Signals Provider • Get started in 4 steps
+            Free Gold and Forex Signals • Get started in 4 steps
           </p>
         </div>
 
@@ -47,8 +47,7 @@ export default function HowItWorks() {
           ].map((item, index) => (
             <div 
               key={index}
-              className="glass-card p-6 text-center group hover:scale-105 transition-all duration-500 hover:shadow-glow relative"
-              style={{ transitionDelay: animation.isVisible ? `${index * 150}ms` : '0ms' }}
+              className={`glass-card p-6 text-center group hover:scale-105 transition-all duration-500 hover:shadow-glow relative animate-slide-up ${animation.isVisible ? 'visible' : ''} animate-stagger-${index + 1}`}
             >
               {/* Step Number */}
               <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 w-8 h-8 bg-vpfx-accent text-white rounded-full flex items-center justify-center font-black text-sm">

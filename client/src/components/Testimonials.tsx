@@ -42,7 +42,7 @@ export default function Testimonials() {
         >
           <h2 className="text-3xl md:text-5xl font-black mb-4 text-gradient">Transparent Results You Can Trust</h2>
           <p className="text-vpfx-muted text-lg max-w-2xl mx-auto">
-            Daily verified results from our Gold & Forex Signals Provider • 97% accuracy
+            Daily verified results from our Free Gold and Forex Signals • 97% accuracy
           </p>
           
 
@@ -51,20 +51,14 @@ export default function Testimonials() {
         {/* Testimonials Grid */}
         <div 
           ref={gridAnimation.ref}
-          className={`grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto animate-fade-in-up ${gridAnimation.isVisible ? 'visible' : ''}`}
+          className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto"
         >
-          {testimonials.map((testimonial, index) => (
+          {testimonials.map((testimonial, index) => {
+            const animClasses = ['animate-fade-in-left', 'animate-scale-in', 'animate-fade-in-right'];
+            return (
             <div 
               key={testimonial.id}
-              className="glass-card p-6 group hover:scale-105 transition-all duration-500 hover:shadow-glow"
-              style={{ 
-                transitionProperty: 'opacity, transform',
-                transitionDuration: '0.8s',
-                transitionTimingFunction: 'ease-out',
-                transitionDelay: gridAnimation.isVisible ? `${index * 200}ms` : '0ms',
-                opacity: gridAnimation.isVisible ? 1 : 0,
-                transform: gridAnimation.isVisible ? 'translateY(0)' : 'translateY(30px)'
-              }}
+              className={`glass-card p-6 group hover:scale-105 transition-all duration-500 hover:shadow-glow ${animClasses[index]} ${gridAnimation.isVisible ? 'visible' : ''} animate-stagger-${index + 1}`}
             >
               {/* Screenshot */}
               <div className="mb-4 rounded-xl overflow-hidden shadow-lg">
@@ -96,7 +90,8 @@ export default function Testimonials() {
               </p>
               
             </div>
-          ))}
+          )})
+          }
         </div>
 
         {/* Call to Action */}

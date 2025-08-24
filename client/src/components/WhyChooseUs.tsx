@@ -14,7 +14,7 @@ export default function WhyChooseUs() {
             Why Traders Trust VictoryPipsFX
           </h2>
           <p className="text-vpfx-text/80 text-lg max-w-2xl mx-auto">
-            Gold & Forex Signals Provider • 97% accuracy
+            Free Gold and Forex Signals • 97% accuracy
           </p>
         </div>
 
@@ -23,23 +23,25 @@ export default function WhyChooseUs() {
             {
               icon: "🎯",
               title: "97% Accuracy",
-              description: "Proven gold & forex signals with verified results."
+              description: "Proven gold & forex signals with verified results.",
+              animClass: "animate-fade-in-left"
             },
             {
               icon: "👨‍💼",
               title: "Professional Team",
-              description: "Expert traders delivering daily accurate signals."
+              description: "Expert traders delivering daily accurate signals.",
+              animClass: "animate-scale-in"
             },
             {
               icon: "⚡",
               title: "Daily Signals",
-              description: "Real-time gold & forex alerts direct to Telegram."
+              description: "Real-time gold & forex alerts direct to Telegram.",
+              animClass: "animate-fade-in-right"
             }
           ].map((item, index) => (
             <div 
               key={index}
-              className="glass-card p-8 text-center group hover:scale-105 transition-all duration-500 hover:shadow-glow"
-              style={{ transitionDelay: animation.isVisible ? `${index * 200}ms` : '0ms' }}
+              className={`glass-card p-8 text-center group hover:scale-105 transition-all duration-500 hover:shadow-glow ${item.animClass} ${animation.isVisible ? 'visible' : ''} animate-stagger-${index + 1}`}
             >
               <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">
                 {item.icon}
