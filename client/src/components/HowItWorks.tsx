@@ -14,7 +14,7 @@ export default function HowItWorks() {
             Simple. Fast. Effective.
           </h2>
           <p className="text-vpfx-text/80 text-lg max-w-2xl mx-auto">
-            **Gold & Forex Signals Provider** - Get started in 4 steps
+            Gold & Forex Signals Provider • Get started in 4 steps
           </p>
         </div>
 
@@ -41,7 +41,7 @@ export default function HowItWorks() {
             {
               step: "4",
               icon: "🎯",
-              title: "Profit with **97% Accuracy**",
+              title: "Profit with 97% Accuracy",
               description: "Consistent results from professional trading team"
             }
           ].map((item, index) => (

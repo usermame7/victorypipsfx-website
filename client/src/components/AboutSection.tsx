@@ -16,7 +16,7 @@ export default function AboutSection() {
           
           <div className="glass-card p-8 md:p-12">
             <p className="text-vpfx-text text-lg md:text-xl leading-relaxed mb-8">
-              <span className="text-vpfx-accent font-bold">VictoryPipsFX</span> is a **Gold & Forex Signals Provider** with professional traders delivering **97% accuracy** through technical analysis.
+              <span className="text-vpfx-accent font-bold">VictoryPipsFX</span> is a Gold & Forex Signals Provider • Professional traders • 97% accuracy through technical analysis.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
@@ -47,7 +47,7 @@ export default function AboutSection() {
 
             <div className="text-center">
               <p className="text-vpfx-text/80 text-base mb-6">
-                Join 25k+ traders trusting our **Gold & Forex Signals Provider** for **97% accuracy**.
+                Join 25k+ traders trusting our Gold & Forex Signals Provider • 97% accuracy.
               </p>
               
               <a

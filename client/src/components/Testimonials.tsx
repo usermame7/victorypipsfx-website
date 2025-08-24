@@ -42,7 +42,7 @@ export default function Testimonials() {
         >
           <h2 className="text-3xl md:text-5xl font-black mb-4 text-gradient">Transparent Results You Can Trust</h2>
           <p className="text-vpfx-muted text-lg max-w-2xl mx-auto">
-            Daily verified results from our **Gold & Forex Signals Provider** with **97% accuracy**
+            Daily verified results from our Gold & Forex Signals Provider • 97% accuracy
           </p>
           
 

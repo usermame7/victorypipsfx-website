@@ -31,7 +31,7 @@ export default function Hero() {
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-black mb-4 text-gradient tracking-tight leading-tight bg-[#e6e8edd4]">Gold & Forex Signals Provider</h1>
 
           {/* Subtitle */}
-          <h2 className="text-lg md:text-xl max-w-3xl mx-auto mb-6 bg-[#00000000] text-[#ffffff] font-bold">**97% Success Rate** • Professional Trading Team • Daily Accurate Signals</h2>
+          <h2 className="text-lg md:text-xl max-w-3xl mx-auto mb-6 bg-[#00000000] text-[#ffffff] font-bold">97% Success Rate • Professional Trading Team • Daily Accurate Signals</h2>
           
 
           
@@ -112,22 +112,12 @@ export default function Hero() {
           {/* Gold & Forex Signals Info Section */}
           <div className="max-w-4xl mx-auto mb-12 space-y-4 text-center">
             <p className="text-vpfx-accent text-base md:text-lg font-bold">
-              **Gold & Forex Signals Provider** • **97% Accuracy** • Free Access
+              Gold & Forex Signals Provider • 97% Accuracy • Free Access
             </p>
           </div>
 
         </div>
 
-        {/* Footer */}
-        <footer className="glass-card mt-16 p-8 text-center border-t border-white/5">
-          <div className="text-sm text-vpfx-muted">
-            © {new Date().getFullYear()} VictoryPipsFX LTD.
-            <br className="md:hidden" />
-            <span className="block md:inline mt-2 md:mt-0 md:ml-2 text-xs opacity-75">
-              Educational content only • 18+ • Trading involves substantial risk of loss • Past performance does not guarantee future results
-            </span>
-          </div>
-        </footer>
       </section>
     </main>
   );

@@ -68,7 +68,7 @@ export default function Footer() {
           
           {/* Copyright */}
           <div className="text-vpfx-accent font-bold text-lg">
-            © 2025 VictoryPipsFX LTD
+            © 2025 VictoryPipsFX LTD • Educational content only • 18+ • Trading involves substantial risk of loss • Past performance does not guarantee future results
           </div>
           
           {/* Footer Links */}

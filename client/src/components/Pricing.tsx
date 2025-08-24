@@ -16,7 +16,7 @@ export default function Pricing() {
           
           <div className="max-w-4xl mx-auto glass-card p-8 md:p-12">
             <p className="text-vpfx-text text-lg md:text-xl leading-relaxed mb-8">
-              **Gold & Forex Signals Provider** offering <span className="text-vpfx-accent font-bold">100% free access</span> with **97% accuracy**. No monthly fees.
+              Gold & Forex Signals Provider offering <span className="text-vpfx-accent font-bold">100% free access</span> • 97% accuracy • No monthly fees.
             </p>
             
             <div className="text-center space-y-6">

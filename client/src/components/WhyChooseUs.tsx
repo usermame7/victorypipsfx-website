@@ -14,7 +14,7 @@ export default function WhyChooseUs() {
             Why Traders Trust VictoryPipsFX
           </h2>
           <p className="text-vpfx-text/80 text-lg max-w-2xl mx-auto">
-            **Gold & Forex Signals Provider** with **97% accuracy**
+            Gold & Forex Signals Provider • 97% accuracy
           </p>
         </div>
 
