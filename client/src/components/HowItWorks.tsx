@@ -56,8 +56,14 @@ export default function HowItWorks() {
               </div>
 
               {/* Icon */}
-              <div className="text-3xl mb-4 mt-4 group-hover:scale-110 transition-transform duration-300">
-                {item.icon}
+              <div className="text-3xl mb-4 mt-4 group-hover:scale-110 transition-transform duration-300 flex justify-center">
+                {index === 0 ? (
+                  <svg className="w-8 h-8 text-vpfx-accent" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M9.04 15.3l-.38 5.33c.54 0 .78-.23 1.06-.5l2.55-2.45 5.29 3.87c.97.53 1.67.25 1.94-.9l3.52-16.5h.01c.31-1.45-.52-2.02-1.45-1.67L1.1 9.46c-1.41.55-1.39 1.34-.24 1.7l5.1 1.59 11.85-7.48c.56-.34 1.06-.15.64.21L9.04 15.3z"/>
+                  </svg>
+                ) : (
+                  item.icon
+                )}
               </div>
 
               {/* Title */}
