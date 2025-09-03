@@ -60,17 +60,21 @@
     <script type="module" crossorigin src="/assets/index-CZYAoM9L.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-C0qhYPxX.css">
 
-    <!-- Redirect handler -->
+    <!-- Lead Tracking for Telegram + Contact Us -->
     <script>
       document.addEventListener("DOMContentLoaded", function() {
         const telegramLinks = document.querySelectorAll("a[href*='t.me']");
+        const contactLinks = document.querySelectorAll("a[href*='contact'], a:contains('Contact Us')");
+
         telegramLinks.forEach(link => {
           link.addEventListener("click", function(e) {
-            e.preventDefault();
-            fbq('track', 'Lead'); // fire conversion before leaving
-            setTimeout(() => {
-              window.location.href = link.href;
-            }, 1000); // 1 sec delay
+            fbq('track', 'Lead', {content_name: 'Join Telegram'});
+          });
+        });
+
+        contactLinks.forEach(link => {
+          link.addEventListener("click", function(e) {
+            fbq('track', 'Lead', {content_name: 'Contact Us'});
           });
         });
       });
