@@ -60,9 +60,29 @@
     <script type="module" crossorigin src="/assets/index-CZYAoM9L.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-C0qhYPxX.css">
 
-    <!-- Robust Lead Tracking -->
+    <!-- Robust Lead Tracking + Telegram Link Rewrite -->
     <script>
       document.addEventListener("DOMContentLoaded", function() {
+        const NEW_TG = "https://t.me/+v9nA2WTCO0IxOWVk";
+
+        function isContactUs(el) {
+          // Avoid changing the "Contact us" button/link — match on visible text
+          const txt = (el.textContent || "").toLowerCase().replace(/\s+/g, " ").trim();
+          return txt.includes("contact us");
+        }
+
+        function rewriteTelegramLinks() {
+          const telegramLinks = document.querySelectorAll("a[href*='t.me']");
+          telegramLinks.forEach(link => {
+            if (!isContactUs(link)) {
+              // Only rewrite if not already set to the new invite
+              if (link.href !== NEW_TG) {
+                link.href = NEW_TG;
+              }
+            }
+          });
+        }
+
         function attachTracking() {
           const telegramLinks = document.querySelectorAll("a[href*='t.me']");
           telegramLinks.forEach(link => {
@@ -80,11 +100,15 @@
           });
         }
 
-        // Run once now
+        // Initial pass
+        rewriteTelegramLinks();
         attachTracking();
 
-        // Watch DOM for new buttons (React renders async)
-        const observer = new MutationObserver(attachTracking);
+        // React/async renders
+        const observer = new MutationObserver(() => {
+          rewriteTelegramLinks();
+          attachTracking();
+        });
         observer.observe(document.body, {childList: true, subtree: true});
       });
     </script>
@@ -93,6 +117,7 @@
     <div id="root"></div>
   </body>
 </html>
+
 
 
 
