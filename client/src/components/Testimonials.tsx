@@ -108,7 +108,7 @@ export default function Testimonials() {
               Join 25,000+ traders getting profitable results daily.
             </p>
             <a
-              href="https://t.me/+5t-g2gd1vVQ2MDU0"
+              href="https://t.me/+DRK_A5q8QLg2MmM0"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-gradient inline-flex items-center gap-3 px-8 py-4 rounded-2xl font-black text-vpfx-bg transition-all duration-300 hover:-translate-y-1 hover:scale-105 animate-glow animate-auto-shake hover-shake"
