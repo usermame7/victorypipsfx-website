@@ -14,7 +14,7 @@ export default function Footer() {
             </p>
             <div className="flex flex-wrap justify-center gap-4 mt-4">
               <a
-                href="https://t.me/+tF9XarrDXqw5M2Y0"
+                href="https://t.me/+5t-g2gd1vVQ2MDU0"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold bg-vpfx-accent text-white transition-all duration-300 hover:bg-vpfx-accent/90 hover:scale-105 animate-auto-shake hover-shake"
@@ -73,7 +73,7 @@ export default function Footer() {
           
           {/* Footer Links */}
           <div className="flex flex-wrap justify-center gap-6 text-xs text-vpfx-muted">
-            <a href="https://t.me/+tF9XarrDXqw5M2Y0" target="_blank" rel="noopener noreferrer" className="hover:text-vpfx-accent transition-colors">Telegram Channel</a>
+            <a href="https://t.me/+5t-g2gd1vVQ2MDU0" target="_blank" rel="noopener noreferrer" className="hover:text-vpfx-accent transition-colors">Telegram Channel</a>
             <span>•</span>
             <a href="https://t.me/m/43q_ouSRODk0" target="_blank" rel="noopener noreferrer" className="hover:text-vpfx-accent transition-colors">Contact Us</a>
             <span>•</span>

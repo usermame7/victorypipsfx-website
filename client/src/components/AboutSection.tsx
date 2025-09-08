@@ -54,7 +54,7 @@ export default function AboutSection() {
               </p>
               
               <a
-                href="https://t.me/+tF9XarrDXqw5M2Y0"
+                href="https://t.me/+5t-g2gd1vVQ2MDU0"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 px-8 py-4 rounded-xl font-bold bg-vpfx-accent/20 text-vpfx-accent border border-vpfx-accent/30 transition-all duration-300 hover:bg-vpfx-accent hover:text-white hover:scale-105 animate-auto-shake hover-shake"

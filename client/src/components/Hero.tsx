@@ -59,7 +59,7 @@ export default function Hero() {
           <div className="mb-12 space-y-4">
             <div className="text-center space-y-4">
               <a
-                href="https://t.me/+tF9XarrDXqw5M2Y0"
+                href="https://t.me/+5t-g2gd1vVQ2MDU0"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 px-10 py-5 rounded-2xl font-black bg-gradient-to-r from-vpfx-accent to-cyan-400 text-white border-2 border-vpfx-accent/50 transition-all duration-300 hover:-translate-y-1 hover:scale-105 active:translate-y-0 active:scale-95 hover:shadow-glow animate-auto-shake hover-shake text-xl shadow-2xl"
