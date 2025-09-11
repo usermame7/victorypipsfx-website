@@ -61,56 +61,12 @@
     <script type="module" crossorigin src="/assets/index-CZYAoM9L.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-C0qhYPxX.css">
 
-    <!-- Robust Lead Tracking + Telegram Link Rewrite -->
+    <!-- Tracking for Internal Redirect Pages -->
     <script>
+      // Note: Telegram link tracking now handled by individual redirect pages (JoinPage.tsx and ContactPage.tsx)
+      // This script is kept minimal since React components now use internal routes
       document.addEventListener("DOMContentLoaded", function() {
-        const NEW_TG = "https://t.me/+0BVjGIJZSJZjYjc0";
-
-        function isContactUs(el) {
-          // Avoid changing the "Contact us" button/link — match on visible text
-          const txt = (el.textContent || "").toLowerCase().replace(/\s+/g, " ").trim();
-          return txt.includes("contact us");
-        }
-
-        function rewriteTelegramLinks() {
-          const telegramLinks = document.querySelectorAll("a[href*='t.me']");
-          telegramLinks.forEach(link => {
-            if (!isContactUs(link)) {
-              // Only rewrite if not already set to the new invite
-              if (link.href !== NEW_TG) {
-                link.href = NEW_TG;
-              }
-            }
-          });
-        }
-
-        function attachTracking() {
-          const telegramLinks = document.querySelectorAll("a[href*='t.me']");
-          telegramLinks.forEach(link => {
-            if (!link.dataset.tracked) {
-              link.dataset.tracked = "true";
-              link.addEventListener("click", function() {
-                fbq('track', 'Lead', {content_name: 'Join Telegram'});
-                gtag('event', 'conversion', {
-                  'send_to': 'AW-17497966886/O2HWCOitm4sbEKaS15dB',
-                  'value': 1.0,
-                  'currency': 'USD'
-                });
-              });
-            }
-          });
-        }
-
-        // Initial pass
-        rewriteTelegramLinks();
-        attachTracking();
-
-        // React/async renders
-        const observer = new MutationObserver(() => {
-          rewriteTelegramLinks();
-          attachTracking();
-        });
-        observer.observe(document.body, {childList: true, subtree: true});
+        console.log("VictoryPipsFX: Internal redirect system active");
       });
     </script>
   </head>

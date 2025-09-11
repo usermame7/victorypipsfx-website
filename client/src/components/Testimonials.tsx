@@ -108,9 +108,7 @@ export default function Testimonials() {
               Join 25,000+ traders getting profitable results daily.
             </p>
             <a
-              href="https://t.me/+0BVjGIJZSJZjYjc0"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/join"
               className="btn-gradient inline-flex items-center gap-3 px-8 py-4 rounded-2xl font-black text-vpfx-bg transition-all duration-300 hover:-translate-y-1 hover:scale-105 animate-glow animate-auto-shake hover-shake"
             >
               <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">

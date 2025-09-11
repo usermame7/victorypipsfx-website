@@ -43,33 +43,25 @@ export default function Header() {
           {/* Navigation Menu */}
           <div className="hidden md:flex items-center gap-6">
             <a 
-              href="https://t.me/+0BVjGIJZSJZjYjc0" 
-              target="_blank" 
-              rel="noopener noreferrer"
+              href="/join"
               className="text-vpfx-text hover:text-vpfx-accent font-semibold transition-all duration-300 hover:scale-105"
             >
               Courses
             </a>
             <a 
-              href="https://t.me/+0BVjGIJZSJZjYjc0" 
-              target="_blank" 
-              rel="noopener noreferrer"
+              href="/join"
               className="text-vpfx-text hover:text-vpfx-accent font-semibold transition-all duration-300 hover:scale-105"
             >
               Community Access
             </a>
             <a 
-              href="https://t.me/+0BVjGIJZSJZjYjc0" 
-              target="_blank" 
-              rel="noopener noreferrer"
+              href="/join"
               className="text-vpfx-text hover:text-vpfx-accent font-semibold transition-all duration-300 hover:scale-105"
             >
               Free Lessons
             </a>
             <a 
-              href="https://t.me/m/43q_ouSRODk0" 
-              target="_blank" 
-              rel="noopener noreferrer"
+              href="/contact"
               className="text-vpfx-text hover:text-vpfx-accent font-semibold transition-all duration-300 hover:scale-105"
             >
               Contact Us
@@ -79,7 +71,7 @@ export default function Header() {
           {/* Mobile Menu + CTA Button */}
           <div className="flex items-center gap-3">
             <TelegramButton 
-              href="https://t.me/+0BVjGIJZSJZjYjc0"
+              href="/join"
               size="sm"
               className="hidden sm:flex"
             />

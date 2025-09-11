@@ -44,9 +44,7 @@ export default function Pricing() {
             {/* CTA Buttons */}
             <div className="flex flex-wrap justify-center gap-4 mt-12">
               <a
-                href="https://t.me/+0BVjGIJZSJZjYjc0"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/join"
                 className="inline-flex items-center gap-3 px-10 py-5 rounded-2xl font-black bg-gradient-to-r from-vpfx-accent to-cyan-400 text-white border-2 border-vpfx-accent/50 transition-all duration-300 hover:-translate-y-1 hover:scale-105 hover:shadow-glow animate-auto-shake hover-shake text-xl shadow-2xl"
               >
                 <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
@@ -55,9 +53,7 @@ export default function Pricing() {
                 <span>Join Free Telegram Channel</span>
               </a>
               <a
-                href="https://t.me/m/43q_ouSRODk0"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/contact"
                 className="inline-flex items-center gap-3 px-10 py-5 rounded-2xl font-black bg-white text-black border-2 border-white transition-all duration-300 hover:scale-105 animate-auto-shake hover-shake shadow-2xl text-xl"
               >
                 <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">

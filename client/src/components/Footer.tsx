@@ -14,9 +14,7 @@ export default function Footer() {
             </p>
             <div className="flex flex-wrap justify-center gap-4 mt-4">
               <a
-                href="https://t.me/+0BVjGIJZSJZjYjc0"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/join"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold bg-vpfx-accent text-white transition-all duration-300 hover:bg-vpfx-accent/90 hover:scale-105 animate-auto-shake hover-shake"
               >
                 <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
@@ -25,9 +23,7 @@ export default function Footer() {
                 Telegram Channel
               </a>
               <a
-                href="https://t.me/m/43q_ouSRODk0"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/contact"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold bg-white text-black transition-all duration-300 hover:scale-105 animate-auto-shake hover-shake"
               >
                 <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
@@ -73,9 +69,9 @@ export default function Footer() {
           
           {/* Footer Links */}
           <div className="flex flex-wrap justify-center gap-6 text-xs text-vpfx-muted">
-            <a href="https://t.me/+0BVjGIJZSJZjYjc0" target="_blank" rel="noopener noreferrer" className="hover:text-vpfx-accent transition-colors">Telegram Channel</a>
+            <a href="/join" className="hover:text-vpfx-accent transition-colors">Telegram Channel</a>
             <span>•</span>
-            <a href="https://t.me/m/43q_ouSRODk0" target="_blank" rel="noopener noreferrer" className="hover:text-vpfx-accent transition-colors">Contact Us</a>
+            <a href="/contact" className="hover:text-vpfx-accent transition-colors">Contact Us</a>
             <span>•</span>
             <span>Free Forex Signals</span>
             <span>•</span>

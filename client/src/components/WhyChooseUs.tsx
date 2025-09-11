@@ -56,9 +56,7 @@ export default function WhyChooseUs() {
               {/* CTA Button */}
               <div className="mt-6">
                 <a
-                  href="https://t.me/+0BVjGIJZSJZjYjc0"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="/join"
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold bg-vpfx-accent/20 text-vpfx-accent border border-vpfx-accent/30 transition-all duration-300 hover:bg-vpfx-accent hover:text-white hover:scale-105 animate-auto-shake hover-shake"
                 >
                   <svg className="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">

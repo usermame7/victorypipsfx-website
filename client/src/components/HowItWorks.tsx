@@ -81,9 +81,7 @@ export default function HowItWorks() {
         {/* Bottom CTA */}
         <div className="text-center mt-12">
           <a
-            href="https://t.me/+0BVjGIJZSJZjYjc0"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/join"
             className="inline-flex items-center gap-3 px-10 py-5 rounded-2xl font-black bg-gradient-to-r from-vpfx-accent to-cyan-400 text-white border-2 border-vpfx-accent/50 transition-all duration-300 hover:-translate-y-1 hover:scale-105 hover:shadow-glow animate-auto-shake hover-shake text-xl shadow-2xl"
           >
             <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
