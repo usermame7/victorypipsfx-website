@@ -36,7 +36,7 @@ export default function HowItWorks() {
               step: "3",
               icon: "💰",
               title: "Learn Trade Analysis", 
-              description: "Study market insights with educational entry and exit levels"
+              description: "Study market insights with educational chart markups and learning checkpoints"
             },
             {
               step: "4",

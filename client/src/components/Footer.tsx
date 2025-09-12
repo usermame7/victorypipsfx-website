@@ -73,11 +73,11 @@ export default function Footer() {
             <span>•</span>
             <a href="/contact" className="hover:text-vpfx-accent transition-colors">Contact Us</a>
             <span>•</span>
-            <span>Market Insights</span>
+            <a href="/disclaimer" className="hover:text-vpfx-accent transition-colors">Disclaimer</a>
             <span>•</span>
-            <span>Educational Content</span>
+            <a href="/privacy" className="hover:text-vpfx-accent transition-colors">Privacy Policy</a>
             <span>•</span>
-            <span>Professional Team</span>
+            <a href="/terms" className="hover:text-vpfx-accent transition-colors">Terms of Use</a>
             <span>•</span>
             <span>18+ Only</span>
           </div>

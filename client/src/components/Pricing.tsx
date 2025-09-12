@@ -27,8 +27,8 @@ export default function Pricing() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-left max-w-2xl mx-auto">
                 {[
                   "Educational market insights and trade ideas",
-                  "Real-time Telegram alerts", 
-                  "Professional entry/exit levels",
+                  "Real-time educational updates", 
+                  "Annotated example setups and post-analysis case studies",
                   "Risk management included",
                   "Free VIP channel access",
                   "Professional team support"
