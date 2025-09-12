@@ -14,7 +14,7 @@ export default function WhyChooseUs() {
             Why Traders Trust VictoryPipsFX
           </h2>
           <p className="text-vpfx-text/80 text-lg max-w-2xl mx-auto">
-            Free Gold and Forex Signals • 97% accuracy
+            Market Insights • Educational Content
           </p>
         </div>
 
@@ -22,20 +22,20 @@ export default function WhyChooseUs() {
           {[
             {
               icon: "🎯",
-              title: "97% Accuracy",
-              description: "Proven gold & forex signals with verified results.",
+              title: "Educational Quality",
+              description: "Transparent methodology for market analysis insights.",
               animClass: "animate-fade-in-left"
             },
             {
               icon: "👨‍💼",
               title: "Professional Team",
-              description: "Expert traders delivering daily accurate signals.",
+              description: "Educational team providing daily market commentary.",
               animClass: "animate-scale-in"
             },
             {
               icon: "⚡",
-              title: "Daily Signals",
-              description: "Real-time gold & forex alerts direct to Telegram.",
+              title: "Daily Market Insights",
+              description: "Educational trade ideas and market analysis via Telegram.",
               animClass: "animate-fade-in-right"
             }
           ].map((item, index) => (

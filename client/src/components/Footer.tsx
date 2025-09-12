@@ -7,10 +7,10 @@ export default function Footer() {
           {/* Social Proof Section */}
           <div className="bg-gradient-to-r from-vpfx-accent/10 to-cyan-500/10 border border-vpfx-accent/20 rounded-xl p-6 max-w-2xl mx-auto">
             <div className="text-vpfx-accent font-bold text-lg mb-2">
-              Join 25k+ traders receiving daily forex signals
+              Join 500+ traders learning daily market insights
             </div>
             <p className="text-vpfx-text text-sm">
-              Our community grows stronger every day with professional traders receiving accurate forex signals and gold alerts with 97% success rate.
+              Our educational community provides transparent methodology and market analysis. No guarantees. Learn from real-time market conditions and improve your trading decision-making.
             </p>
             <div className="flex flex-wrap justify-center gap-4 mt-4">
               <a
@@ -37,17 +37,17 @@ export default function Footer() {
           {/* Disclaimer Section */}
           <div className="bg-vpfx-card/20 border border-vpfx-border/10 rounded-lg p-6 max-w-4xl mx-auto">
             <div className="text-vpfx-accent font-semibold text-lg mb-4 uppercase tracking-wide">
-              Risk Disclaimer • Forex Signals for Educational Purposes Only • 18+ Only
+              Risk Disclaimer • Market Insights for Educational Purposes Only • 18+ Only
             </div>
             
             <div className="text-vpfx-muted text-sm leading-relaxed space-y-3">
               <p className="font-medium text-vpfx-text">
-                Trading Forex and financial markets involves risk. VictoryPipsFX does not provide financial advice. Signals are for educational purposes only. Past performance is not indicative of future results.
+                Trading Forex and financial markets involves risk. VictoryPipsFX does not provide financial advice. All content is for educational purposes only. Past performance is not indicative of future results.
               </p>
               
               <p>
                 HIGH RISK WARNING: Forex trading involves substantial risk of loss. You could lose your entire investment. 
-                Our signals are based on technical analysis and market research, but markets are unpredictable and losses can occur.
+                Our market insights are based on technical analysis and market research, but markets are unpredictable and losses can occur.
               </p>
               
               <p>
@@ -57,7 +57,7 @@ export default function Footer() {
               
               <p>
                 VictoryPipsFX operates independently with no connection to Facebook or other social platforms. 
-                We provide forex signals for educational purposes only. Always consult a qualified financial advisor before making investment decisions.
+                We provide market insights for educational purposes only. Always consult a qualified financial advisor before making investment decisions.
               </p>
             </div>
           </div>
@@ -73,9 +73,9 @@ export default function Footer() {
             <span>•</span>
             <a href="/contact" className="hover:text-vpfx-accent transition-colors">Contact Us</a>
             <span>•</span>
-            <span>Free Forex Signals</span>
+            <span>Market Insights</span>
             <span>•</span>
-            <span>97% Accuracy</span>
+            <span>Educational Content</span>
             <span>•</span>
             <span>Professional Team</span>
             <span>•</span>
@@ -83,7 +83,7 @@ export default function Footer() {
           </div>
           
           <div className="text-vpfx-muted/70 text-xs border-t border-vpfx-border/5 pt-4">
-            Support: Telegram Monday-Friday 9AM-6PM GMT • VIP Forex Signals Community
+            Support: Telegram Monday-Friday 9AM-6PM GMT • Educational Trading Community
           </div>
         </div>
       </div>

@@ -16,7 +16,7 @@ export default function Pricing() {
           
           <div className={`max-w-4xl mx-auto glass-card p-8 md:p-12 animate-scale-in ${animation.isVisible ? 'visible' : ''}`}>
             <p className="text-vpfx-text text-lg md:text-xl leading-relaxed mb-8">
-              Free Gold and Forex Signals offering <span className="text-vpfx-accent font-bold">100% free access</span> • 97% accuracy • No monthly fees.
+              Forex & Gold Market Insights offering <span className="text-vpfx-accent font-bold">free access</span> • Educational content • No monthly fees.
             </p>
             
             <div className="text-center space-y-6">
@@ -26,7 +26,7 @@ export default function Pricing() {
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-left max-w-2xl mx-auto">
                 {[
-                  "**97% accuracy** gold & forex signals",
+                  "Educational market insights and trade ideas",
                   "Real-time Telegram alerts", 
                   "Professional entry/exit levels",
                   "Risk management included",

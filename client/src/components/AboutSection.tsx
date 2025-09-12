@@ -16,7 +16,7 @@ export default function AboutSection() {
           
           <div className={`glass-card p-8 md:p-12 animate-fade-in-up ${animation.isVisible ? 'visible' : ''}`}>
             <p className="text-vpfx-text text-lg md:text-xl leading-relaxed mb-8">
-              <span className="text-vpfx-accent font-bold">VictoryPipsFX</span> provides Free Gold and Forex Signals • Professional traders • 97% accuracy through technical analysis.
+              <span className="text-vpfx-accent font-bold">VictoryPipsFX</span> provides Forex & Gold Market Insights • Educational content • Transparent methodology through technical analysis.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
@@ -28,13 +28,13 @@ export default function AboutSection() {
                 },
                 {
                   icon: "🌍", 
-                  title: "Free Gold and Forex Signals",
-                  description: "Daily accurate signals worldwide"
+                  title: "Market Insights & Trade Ideas",
+                  description: "Educational commentary worldwide"
                 },
                 {
                   icon: "🎯",
-                  title: "97% Accuracy", 
-                  description: "Proven track record with transparent results"
+                  title: "Educational Quality", 
+                  description: "Transparent methodology with no guarantees"
                 }
               ].map((item, index) => {
                 const animClasses = ['animate-fade-in-left', 'animate-scale-in', 'animate-fade-in-right'];
@@ -50,7 +50,7 @@ export default function AboutSection() {
 
             <div className="text-center">
               <p className="text-vpfx-text/80 text-base mb-6">
-                Join 25k+ traders trusting our Free Gold and Forex Signals • 97% accuracy.
+                Join 500+ traders learning from our Market Insights • Educational content only.
               </p>
               
               <a

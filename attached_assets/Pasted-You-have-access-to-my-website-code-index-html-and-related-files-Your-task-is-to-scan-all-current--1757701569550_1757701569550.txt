@@ -1,0 +1,57 @@
+You have access to my website code (index.html and related files). Your task is to scan all current text on the site and rewrite it so that it is compliant with Google Ads financial policies. The website should look professional, educational, and trust-building while avoiding risky words.
+
+1. Search the entire website (index.html and subpages) for risky words or claims like:
+
+guarantee, guaranteed, 100%, never lose, risk-free, secret, get rich, profit daily, make $, earn $, double your, accuracy %, win rate, autopilot, financial freedom fast, zero losses.
+
+Any numeric claims of profit or win rate (e.g., “97% accurate signals”).
+
+Any text that says “make money,” “profits,” or “earn daily.”
+
+Sensational hooks like “WARNING,” “BREAKING,” “SECRET STRATEGY.”
+
+2. Replace them with safe, compliant alternatives:
+
+“Forex signals” → “Forex & Gold market insights” or “trade ideas.”
+
+“Proven strategies” → “educational strategies” or “market analysis.”
+
+“Make money / earn profits” → “stay informed / make better decisions.”
+
+“97% accuracy” → “daily updates and clear trade levels.”
+
+“Secret / guaranteed” → “transparent methodology / no guarantees.”
+
+3. Insert the following safe text structure into the website:
+
+Headline:
+Free Forex & Gold Market Insights — Join Our Trader Community
+
+Sub-headline:
+Daily analysis, risk notes, and educational trade ideas to help you understand market movements.
+
+Body copy:
+We provide regular commentary on Forex and Gold markets — including potential levels, risk warnings, and key chart movements.
+Our goal is to help you learn from real-time market conditions and improve your trading decision-making.
+
+✔ Daily market commentary and trade ideas
+✔ Educational insights into Forex & Gold movements
+✔ Community discussions with active traders
+✔ Free access via Telegram
+
+Disclaimer (must be visible near CTA and in footer):
+All content is for educational purposes only and does not constitute financial advice. Trading involves risk, including possible loss of capital. Past performance is not indicative of future results.
+
+Call to Action (CTA):
+Join our free Telegram channel today for daily market insights.
+
+Footer/Trust section:
+Transparent educational content. No financial advice. No guarantees.
+
+4. Ensure there is a separate page or section for:
+
+Disclaimer
+
+Privacy Policy
+
+Terms of Use

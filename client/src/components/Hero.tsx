@@ -28,10 +28,10 @@ export default function Hero() {
           </div>
 
           {/* Title */}
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-black mb-4 text-gradient tracking-tight leading-tight bg-[#e6e8edd4]">Free Gold and Forex Signals</h1>
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-black mb-4 text-gradient tracking-tight leading-tight bg-[#e6e8edd4]">Free Forex & Gold Market Insights — Join Our Trader Community</h1>
 
           {/* Subtitle */}
-          <h2 className="text-lg md:text-xl max-w-3xl mx-auto mb-6 bg-[#00000000] text-[#ffffff] font-bold">97% Success Rate • Professional Trading Team • Daily Accurate Signals</h2>
+          <h2 className="text-lg md:text-xl max-w-3xl mx-auto mb-6 bg-[#00000000] text-[#ffffff] font-bold">Daily analysis, risk notes, and educational trade ideas to help you understand market movements</h2>
           
 
           
@@ -41,9 +41,9 @@ export default function Hero() {
           <div className="flex flex-wrap justify-center gap-3 mb-8">
             {[
               { icon: "📈", text: "Chart Analysis" },
-              { icon: "🎯", text: "97% Accuracy" },
+              { icon: "🎯", text: "Daily Updates" },
               { icon: "👥", text: "Professional Team" },
-              { icon: "⚡", text: "Daily Signals" }
+              { icon: "⚡", text: "Trade Ideas" }
             ].map((chip, index) => (
               <span 
                 key={index}
@@ -86,9 +86,9 @@ export default function Hero() {
             className={`grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto mb-16 animate-fade-in-up ${statsAnimation.isVisible ? 'visible' : ''}`}
           >
             <StatCounter 
-              target={97}
-              suffix="%"
-              label="Signal Accuracy"
+              target={500}
+              suffix="+"
+              label="Learning Members"
               delay={0.2}
             />
             <StatCounter 
@@ -100,7 +100,7 @@ export default function Hero() {
             <StatCounter 
               target={3}
               suffix="–5+"
-              label="Daily Forex Signals"
+              label="Daily Market Ideas"
               delay={0.6}
             />
           </div>
@@ -108,8 +108,16 @@ export default function Hero() {
           {/* Gold & Forex Signals Info Section */}
           <div className="max-w-4xl mx-auto mb-12 space-y-4 text-center">
             <p className="text-vpfx-accent text-base md:text-lg font-bold">
-              Free Gold and Forex Signals • 97% Accuracy • Professional Team
+              ✔ Daily market commentary and trade ideas<br/>
+              ✔ Educational insights into Forex & Gold movements<br/>
+              ✔ Community discussions with active traders<br/>
+              ✔ Free access via Telegram
             </p>
+            <div className="mt-6 p-4 bg-vpfx-card/20 border border-vpfx-border/10 rounded-lg max-w-2xl mx-auto">
+              <p className="text-sm text-vpfx-muted">
+                <strong>Disclaimer:</strong> All content is for educational purposes only and does not constitute financial advice. Trading involves risk, including possible loss of capital. Past performance is not indicative of future results.
+              </p>
+            </div>
           </div>
 
         </div>

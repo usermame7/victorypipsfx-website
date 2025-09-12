@@ -14,7 +14,7 @@ export default function HowItWorks() {
             Simple. Fast. Effective.
           </h2>
           <p className="text-vpfx-text/80 text-lg max-w-2xl mx-auto">
-            Free Gold and Forex Signals • Get started in 4 steps
+            Market Insights & Educational Trade Ideas • Get started in 4 steps
           </p>
         </div>
 
@@ -24,25 +24,25 @@ export default function HowItWorks() {
               step: "1",
               icon: "📱",
               title: "Join Telegram",
-              description: "Join our free gold & forex signals channel"
+              description: "Join our free educational market insights channel"
             },
             {
               step: "2", 
               icon: "📱",
-              title: "Receive Daily Signals",
-              description: "Real-time gold & forex signals delivered instantly"
+              title: "Receive Market Insights",
+              description: "Educational trade ideas and market commentary delivered daily"
             },
             {
               step: "3",
               icon: "💰",
-              title: "Copy Trade Setup", 
-              description: "Follow signals with precise entry and exit levels"
+              title: "Learn Trade Analysis", 
+              description: "Study market insights with educational entry and exit levels"
             },
             {
               step: "4",
               icon: "🎯",
-              title: "Profit with 97% Accuracy",
-              description: "Consistent results from professional trading team"
+              title: "Stay Informed & Learn",
+              description: "Educational content to improve your trading decision-making"
             }
           ].map((item, index) => (
             <div 
@@ -87,7 +87,7 @@ export default function HowItWorks() {
             <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
               <path d="M9.04 15.3l-.38 5.33c.54 0 .78-.23 1.06-.5l2.55-2.45 5.29 3.87c.97.53 1.67.25 1.94-.9l3.52-16.5h.01c.31-1.45-.52-2.02-1.45-1.67L1.1 9.46c-1.41.55-1.39 1.34-.24 1.7l5.1 1.59 11.85-7.48c.56-.34 1.06-.15.64.21L9.04 15.3z"/>
             </svg>
-            <span>Start Getting Free Forex Signals Now</span>
+            <span>Join Our Free Educational Community</span>
           </a>
         </div>
       </div>
