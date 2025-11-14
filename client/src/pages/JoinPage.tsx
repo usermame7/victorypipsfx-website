@@ -4,7 +4,7 @@ import { Loader2 } from "lucide-react";
 
 export default function JoinPage() {
   const [countdown, setCountdown] = useState(3);
-  const telegramUrl = "https://t.me/+0BVjGIJZSJZjYjc0";
+  const telegramUrl = "https://t.me/+qyTeUgsGYGdhY2M8";
 
   useEffect(() => {
     // Track the join page visit
@@ -18,6 +18,11 @@ export default function JoinPage() {
         event_category: 'engagement',
         event_label: 'join_page_redirect'
       });
+    }
+
+    // Track Meta Pixel Lead event (when user is about to join Telegram)
+    if (typeof (window as any).fbq !== 'undefined') {
+      (window as any).fbq('track', 'Lead');
     }
 
     const timer = setInterval(() => {

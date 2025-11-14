@@ -4,7 +4,7 @@ import { MessageCircle, Loader2 } from "lucide-react";
 
 export default function ContactPage() {
   const [countdown, setCountdown] = useState(3);
-  const telegramUrl = "https://t.me/m/43q_ouSRODk0";
+  const telegramUrl = "https://t.me/+qyTeUgsGYGdhY2M8";
 
   useEffect(() => {
     // Track the contact page visit
@@ -18,6 +18,11 @@ export default function ContactPage() {
         event_category: 'engagement',
         event_label: 'contact_page_redirect'
       });
+    }
+
+    // Track Meta Pixel Contact event
+    if (typeof (window as any).fbq !== 'undefined') {
+      (window as any).fbq('track', 'Contact');
     }
 
     const timer = setInterval(() => {
