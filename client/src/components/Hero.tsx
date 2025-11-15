@@ -28,10 +28,10 @@ export default function Hero() {
           </div>
 
           {/* Title */}
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-black mb-4 text-gradient tracking-tight leading-tight bg-[#e6e8edd4]">Free Forex & Gold Market Insights — Join Our Trader Community</h1>
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-black mb-4 text-gradient tracking-tight leading-tight bg-[#e6e8edd4]">FREE Gold Signals</h1>
 
           {/* Subtitle */}
-          <h2 className="text-lg md:text-xl max-w-3xl mx-auto mb-6 bg-[#00000000] text-[#ffffff] font-bold">Daily analysis, risk notes, and educational trade ideas to help you understand market movements</h2>
+          <h2 className="text-lg md:text-xl max-w-3xl mx-auto mb-6 bg-[#00000000] text-[#ffffff] font-bold">97% Success Rate • Professional Trading Team • Daily Accurate Signals</h2>
           
 
           
@@ -41,9 +41,9 @@ export default function Hero() {
           <div className="flex flex-wrap justify-center gap-3 mb-8">
             {[
               { icon: "📈", text: "Chart Analysis" },
-              { icon: "🎯", text: "Daily Updates" },
+              { icon: "🎯", text: "97% Accuracy" },
               { icon: "👥", text: "Professional Team" },
-              { icon: "⚡", text: "Trade Ideas" }
+              { icon: "⚡", text: "Daily Signals" }
             ].map((chip, index) => (
               <span 
                 key={index}
